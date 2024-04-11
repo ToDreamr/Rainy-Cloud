@@ -34,7 +34,7 @@
         <entry key="$PROJECT_DIR$/.." value="edit" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2/lib/src.zip!/java.base/java/util/Base64.java" root0="FORCE_HIGHLIGHTING" />
@@ -381,7 +381,7 @@
       <workItem from="1712631554473" duration="59000" />
       <workItem from="1712631625880" duration="1064000" />
       <workItem from="1712824377783" duration="1098000" />
-      <workItem from="1712825782523" duration="72000" />
+      <workItem from="1712825782523" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
