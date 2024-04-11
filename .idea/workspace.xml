@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="" />
+    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +34,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="edit" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,7 +88,7 @@
     "Spring Boot.CloudRedisApplication.executor": "Run",
     "Spring Boot.CloudServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/springcloud-nacos-feign-seata",
@@ -310,10 +313,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.EncryptionUtil" />
         <item itemvalue="Spring Boot.CloudServiceApplication" />
         <item itemvalue="Spring Boot.CloudRedisApplication" />
-        <item itemvalue="应用程序.EncryptionUtil" />
         <item itemvalue="JUnit.CloudServiceApplicationTest.cacheClientTest" />
+        <item itemvalue="应用程序.EncryptionUtil" />
       </list>
     </recent_temporary>
   </component>
