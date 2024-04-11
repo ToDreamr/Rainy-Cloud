@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="" />
+    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/doc_tree.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/readme/架构设计.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img_3.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +44,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2/lib/src.zip!/java.base/java/util/Base64.java" root0="FORCE_HIGHLIGHTING" />
@@ -84,7 +94,7 @@
     "Spring Boot.CloudRedisApplication.executor": "Run",
     "Spring Boot.CloudServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/springcloud-nacos-feign-seata",
@@ -112,6 +122,9 @@
       <recent name="D:\demo-all\springcloud-stream-demo\jar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springcloud-nacos-feign-seata\doc\readme" />
+      <recent name="D:\springcloud-nacos-feign-seata\doc\img" />
+      <recent name="D:\springcloud-nacos-feign-seata\doc" />
       <recent name="D:\demo-all\springcloud-stream-demo\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -439,7 +452,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$PROJECT_DIR$/../../Maven-Repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar!/jakarta/servlet/http/HttpServletResponse.class</url>
           <line>66</line>
-          <properties class="jakarta.servlet.http.HttpServletResponse" method="sendError">
+          <properties class="jakarta.servlet.http.HttpServletResponse">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
