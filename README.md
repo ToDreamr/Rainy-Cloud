@@ -4,7 +4,7 @@
 
 本项目由于前期作为学习阶段，代码较为粗糙，整体架构如下：
 
-![img.png](doc/readme/架构设计.png)
+![img.png](doc/readme/constructor.png)
 
 ##### Cloud-Service作为核心服务，调用Cloud-Core使用其缓存和借阅消息异步确认等服务。
 

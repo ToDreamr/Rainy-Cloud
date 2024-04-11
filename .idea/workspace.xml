@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/doc_tree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/readme/架构设计.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/img/img_3.png" afterDir="false" />
-    </list>
+    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +85,7 @@
     "Spring Boot.CloudRedisApplication.executor": "Run",
     "Spring Boot.CloudServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/springcloud-nacos-feign-seata",
