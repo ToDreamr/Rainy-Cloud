@@ -1,0 +1,77 @@
+server:
+  port: 9022
+  servlet:
+    context-path: /service
+spring:
+  application:
+    name: cloudservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/bootdemo
+    password: 123456
+    username: root
+  cloud:
+    nacos:
+      discovery:
+        # 注册中心地址
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+      config:
+        # 配置中心地址
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+        file-extension: yaml
+        name: cloud-service  #相当于data-id
+    openfeign:
+      httpclient:
+        connection-timeout: 200
+        max-connections: 10
+    # 配置流量卫兵
+    sentinel:
+      transport:
+        dashboard: localhost:9000
+          # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
+      web-context-unify: false
+      block-page: /block
+  # 消息队列：
+  rabbitmq:
+    username: user
+    password: user
+    virtual-host: /cloud-service
+    listener:
+      simple:
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+          max-attempts: 3
+          max-interval: 2000ms
+    addresses: 127.0.0.1:5672
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.alibaba.cloud.sentinel.SentinelProperties: trace
+feign:
+  sentinel:
+    enabled: true
+#seata:
+#  # 注册
+#  registry:
+#    # 使用Nacos
+#    type: nacos
+#    nacos:
+#      # 使用Seata的命名空间，这样才能正确找到Seata服务，由于组使用的是SEATA_GROUP，配置默认值就是，就不用配了
+#      namespace: 73193f73-ff4c-4287-9e8a-bd62f638d4dc
+#      username: nacos
+#      password: nacos
+#  # 配置
+#  config:
+#    type: nacos
+#    nacos:
+#      namespace: 73193f73-ff4c-4287-9e8a-bd62f638d4dc
+#      username: nacos
+#      password: nacos

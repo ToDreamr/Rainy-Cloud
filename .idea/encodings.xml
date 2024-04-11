@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cloud-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-feign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-mapper/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-oauth2-sso/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-oauth2-sso/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

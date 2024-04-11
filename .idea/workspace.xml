@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="edit" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2/lib/src.zip!/java.base/java/util/Base64.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../Maven-Repository/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11-sources.jar!/cn/hutool/jwt/JWT.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../Maven-Repository/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11-sources.jar!/cn/hutool/jwt/RegisteredPayload.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../Maven-Repository/cn/hutool/hutool-all/5.8.11/hutool-all-5.8.11.jar!/cn/hutool/json/ObjectMapper.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files/apache-maven-3.9.4" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2cAUzrSpxW1XhZErcnj3JuX1Zs3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #24.executor": "Run",
+    "Maven.springcloud-stream-demo [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.Nacos.executor": "Debug",
+    "Spring Boot.CloudGateWayApplication.executor": "Run",
+    "Spring Boot.CloudRedisApplication.executor": "Run",
+    "Spring Boot.CloudServiceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "18",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/springcloud-nacos-feign-seata",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "spring.configuration.checksum": "d6c0b6302435986fb95987db88c01346",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\demo-all\springcloud-stream-demo\jar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\demo-all\springcloud-stream-demo\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pray.utils" />
+      <recent name="com.pray.common" />
+      <recent name="com.pray.service.impl" />
+      <recent name="com.pray.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CloudGateWayApplication">
+    <configuration name="EncryptionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pray.utils.EncryptionUtil" />
+      <module name="cloud-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pray.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudServiceApplicationTest.cacheClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-service" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CloudServiceApplicationTest" />
+      <option name="METHOD_NAME" value="cacheClientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sentinel" type="JarApplication">
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="JAR_PATH" value="$PROJECT_DIR$/jar/sentinel-dashboard-1.8.5.jar" />
+      <option name="WORKING_DIRECTORY" value="D:\demo-all\springcloud-nacos-feign-seata\mid-work" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="server.port" value="9000" />
+      </envs>
+      <method v="2" />
+    </configuration>
+    <configuration name="Nacos" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../../DevelopENV/nacos/bin/startup.cmd" />
+      <option name="SCRIPT_OPTIONS" value="-m standalone" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/mid-work" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Redis" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../../redis-6.2.3/bin/redis-server.exe" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/mid-work" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seata" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/seata/bin/seata-server.bat" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/mid-work" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="CloudGateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="cloud-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudGateWayApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudRedisApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JAR 应用程序.Sentinel" />
+      <item itemvalue="JUnit.CloudServiceApplicationTest.cacheClientTest" />
+      <item itemvalue="Shell Script.Seata" />
+      <item itemvalue="Shell Script.Redis" />
+      <item itemvalue="Shell Script.Nacos" />
+      <item itemvalue="Spring Boot.CloudGateWayApplication" />
+      <item itemvalue="Spring Boot.CloudRedisApplication" />
+      <item itemvalue="Spring Boot.CloudServiceApplication" />
+      <item itemvalue="应用程序.EncryptionUtil" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CloudServiceApplication" />
+        <item itemvalue="Spring Boot.CloudRedisApplication" />
+        <item itemvalue="应用程序.EncryptionUtil" />
+        <item itemvalue="JUnit.CloudServiceApplicationTest.cacheClientTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="MYSQL.CreateComplete" value="CreateIfNotExists=1" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="" />
+      <created>1707554143261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707554143261</updated>
+      <workItem from="1707554144460" duration="10122000" />
+      <workItem from="1707835607704" duration="307000" />
+      <workItem from="1707971981984" duration="25000" />
+      <workItem from="1708158868963" duration="27471000" />
+      <workItem from="1708394769514" duration="11644000" />
+      <workItem from="1708416521468" duration="189000" />
+      <workItem from="1708416753184" duration="8130000" />
+      <workItem from="1708524645362" duration="77000" />
+      <workItem from="1708524732725" duration="124000" />
+      <workItem from="1708874273953" duration="941000" />
+      <workItem from="1708943197368" duration="2632000" />
+      <workItem from="1709015070665" duration="324000" />
+      <workItem from="1709023471697" duration="10599000" />
+      <workItem from="1709038549477" duration="5429000" />
+      <workItem from="1709197228720" duration="2929000" />
+      <workItem from="1709203381819" duration="3230000" />
+      <workItem from="1709283606911" duration="732000" />
+      <workItem from="1710522613413" duration="676000" />
+      <workItem from="1710523600393" duration="104000" />
+      <workItem from="1710577418153" duration="15000" />
+      <workItem from="1710665495331" duration="3618000" />
+      <workItem from="1710679475284" duration="32000" />
+      <workItem from="1710854349645" duration="889000" />
+      <workItem from="1710934579147" duration="33000" />
+      <workItem from="1710934940300" duration="5000" />
+      <workItem from="1711005561557" duration="4411000" />
+      <workItem from="1711077246838" duration="41000" />
+      <workItem from="1711369553293" duration="86000" />
+      <workItem from="1711458589680" duration="436000" />
+      <workItem from="1711459044820" duration="3858000" />
+      <workItem from="1711463404543" duration="1730000" />
+      <workItem from="1711465420264" duration="49000" />
+      <workItem from="1711465499686" duration="6767000" />
+      <workItem from="1711522033444" duration="210000" />
+      <workItem from="1711543305243" duration="3946000" />
+      <workItem from="1711601257215" duration="356000" />
+      <workItem from="1711729960558" duration="2288000" />
+      <workItem from="1711782205823" duration="5535000" />
+      <workItem from="1711789117082" duration="147000" />
+      <workItem from="1711789271030" duration="905000" />
+      <workItem from="1711858155463" duration="3711000" />
+      <workItem from="1712062704730" duration="3721000" />
+      <workItem from="1712321884405" duration="5364000" />
+      <workItem from="1712379286787" duration="74000" />
+      <workItem from="1712395394727" duration="3159000" />
+      <workItem from="1712398694652" duration="25000" />
+      <workItem from="1712398721675" duration="60000" />
+      <workItem from="1712398785348" duration="1079000" />
+      <workItem from="1712405571281" duration="14000" />
+      <workItem from="1712495405645" duration="126000" />
+      <workItem from="1712631554473" duration="59000" />
+      <workItem from="1712631625880" duration="1064000" />
+      <workItem from="1712824377783" duration="1098000" />
+      <workItem from="1712825782523" duration="72000" />
+    </task>
+    <task id="LOCAL-00001" summary="微服务-网关">
+      <option name="closed" value="true" />
+      <created>1712327292866</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712327292867</updated>
+    </task>
+    <task id="LOCAL-00002" summary="微服务-网关">
+      <option name="closed" value="true" />
+      <created>1712398849716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712398849716</updated>
+    </task>
+    <task id="LOCAL-00003" summary="微服务-网关">
+      <option name="closed" value="true" />
+      <created>1712398860170</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712398860170</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="微服务-网关" />
+    <option name="LAST_COMMIT_MESSAGE" value="微服务-网关" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$PROJECT_DIR$/../../Maven-Repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar!/jakarta/servlet/http/HttpServletResponse.class</url>
+          <line>66</line>
+          <properties class="jakarta.servlet.http.HttpServletResponse" method="sendError">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../Maven-Repository/org/springframework/spring-webmvc/6.0.4/spring-webmvc-6.0.4.jar!/org/springframework/web/servlet/DispatcherServlet.class</url>
+          <line>690</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((HeaderWriterResponse)this).request" custom="org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterResponse" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

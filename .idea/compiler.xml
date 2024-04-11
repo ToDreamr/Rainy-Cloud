@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-feign" />
+        <module name="cloud-service" />
+        <module name="cloud-common" />
+        <module name="cloud-core" />
+        <module name="cloud-oauth2-sso" />
+        <module name="cloud-gateway" />
+        <module name="cloud-mapper" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

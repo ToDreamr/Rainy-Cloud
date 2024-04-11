@@ -1,0 +1,50 @@
+server:
+  port: 9020
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        # 注册中心地址
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+        enabled: true
+        # 将ephemeral修改为false，表示非临时实例
+        ephemeral: false
+      config:
+        # 配置中心地址
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+        file-extension: yaml #读取配置文件扩展名，由Nacos提供
+    gateway:
+      routes:
+      - id: cloud-service-http #‘-’代表数组
+        uri: lb://cloudservice
+        predicates:
+          - Path=/service/**
+        filters:
+          - GateWayRequestFilter
+      - id: cloud-redis-http
+        uri: lb://cloudcore
+        predicates:
+          - Path=/redis/**
+        filters:
+          - GateWayRequestFilter
+      discovery:
+        locator:
+          enabled: false
+          lower-case-service-id: true
+cloud-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+cloud-redis:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

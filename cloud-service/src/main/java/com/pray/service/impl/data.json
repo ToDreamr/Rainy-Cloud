@@ -1,0 +1,22 @@
+{
+  "message": "success",
+  "code": 200,
+  "data": {
+    "borrowed_books":[
+        {
+        "book_name": "aaa",
+         "users": {
+           "user_id": [1,2,3],
+           "user_name": ["user_A","use_B","user_C"]
+         }
+       },
+       {
+        "book_name": "bbb",
+        "users": {
+          "user_id": [2,3,4],
+          "user_name": ["userA","user_D","user_C"]
+        }
+      }
+    ]
+  }
+}

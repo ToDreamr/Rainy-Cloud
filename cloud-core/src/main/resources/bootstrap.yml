@@ -1,0 +1,56 @@
+spring:
+    cloud:
+      # 配置流量卫兵
+      sentinel:
+        transport:
+          dashboard: localhost:9000
+          # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
+        web-context-unify: false
+      nacos:
+        discovery:
+          # 注册中心地址
+          server-addr: 127.0.0.1:8848
+          namespace: public
+          username: nacos
+          password: nacos
+        config:
+          # 配置中心地址也就是Nacos地址
+          server-addr: 127.0.0.1:8848
+          namespace: public
+          username: nacos
+          password: nacos
+          # 配置文件后缀名
+          file-extension: yaml
+    data:
+      redis:
+        port: 6379
+    application:
+      name: cloudcore   #项目缓存微服务
+    datasource:
+      url: jdbc:mysql://localhost:3306/bootdemo
+      password: 123456
+      username: root
+feign:
+  sentinel:
+    enabled: true
+server:
+  port: 9021
+  servlet:
+    context-path: /redis
+
+#eureka:
+#  instance:
+#    hostname: localhost
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+#    prefer-ip-address: true
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8801/eureka, http://localhost:8802/eureka
+#seata:
+#  service:
+#    vgroup-mapping:
+#      # 这里需要对事务组做映射，默认的分组名为 应用名称-seata-service-group，将其映射到default集群
+#      # 这个很关键，一定要配置对，不然会找不到服务
+#      cloudredis-seata-service-group: default
+#    grouplist:
+#      default: localhost:7091
