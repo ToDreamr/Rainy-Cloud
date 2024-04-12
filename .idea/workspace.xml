@@ -5,7 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthInfoInTokenBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/AuthenticationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/HttpHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/cache/CacheUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/config/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/config/FeignInsideAuthConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/manager/TokenFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/service/AuthDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/auth/AuthUserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/AuthConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/cache/PrayCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/cache/PrayCacheClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/CloudRedisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/CloudRedisApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/config/RedisSerializerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/RoleCacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/RoleCacheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/utils/RoleCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/utils/RoleCacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/utils/impl/RoleCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/utils/impl/RoleCacheServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth2-sso/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/CloudOAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/CloudOAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/JwtTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/JwtTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/Oauth2SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/Oauth2SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/ScheduledConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/ScheduledConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/test/java/CloudServiceApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/test/java/CloudServiceApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +67,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,7 +76,6 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="edit" />
-        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +129,7 @@
     "Spring Boot.CloudRedisApplication.executor": "Run",
     "Spring Boot.CloudServiceApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/springcloud-nacos-feign-seata",
@@ -97,9 +138,13 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
-    "spring.configuration.checksum": "d6c0b6302435986fb95987db88c01346",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "916ce6e9e4815556aec98f1a40fe9cb0",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -112,6 +157,10 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.pray.feign.config" />
+      <recent name="com.pray.entity.bo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\demo-all\springcloud-stream-demo\jar" />
     </key>
@@ -122,10 +171,11 @@
       <recent name="D:\demo-all\springcloud-stream-demo\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pray.entity.bo" />
+      <recent name="com.pray" />
+      <recent name="com.pray.handler" />
       <recent name="com.pray.utils" />
       <recent name="com.pray.common" />
-      <recent name="com.pray.service.impl" />
-      <recent name="com.pray.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -137,49 +187,12 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudGateWayApplication">
-    <configuration name="EncryptionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pray.utils.EncryptionUtil" />
-      <module name="cloud-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pray.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="HTTP 请求.generated-requests | #27">
+    <configuration name="generated-requests | #25" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="25" requestIdentifier="#25" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="CloudServiceApplicationTest.cacheClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud-service" />
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CloudServiceApplicationTest" />
-      <option name="METHOD_NAME" value="cacheClientTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #27" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="27" requestIdentifier="#27" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="Sentinel" type="JarApplication">
       <extension name="net.ashald.envfile">
@@ -264,6 +277,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudOAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-oauth2-sso" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudOAuthApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CloudRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-core" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudRedisApplication" />
@@ -289,6 +315,7 @@
     </configuration>
     <configuration name="CloudServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-service" />
+      <option name="PROGRAM_PARAMETERS" value="server.port=9022" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudServiceApplication" />
       <extension name="coverage">
         <pattern>
@@ -296,28 +323,39 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.generated-requests | #25" />
+      <item itemvalue="HTTP 请求.generated-requests | #27" />
       <item itemvalue="JAR 应用程序.Sentinel" />
-      <item itemvalue="JUnit.CloudServiceApplicationTest.cacheClientTest" />
       <item itemvalue="Shell Script.Seata" />
       <item itemvalue="Shell Script.Redis" />
       <item itemvalue="Shell Script.Nacos" />
       <item itemvalue="Spring Boot.CloudGateWayApplication" />
+      <item itemvalue="Spring Boot.CloudOAuthApplication" />
       <item itemvalue="Spring Boot.CloudRedisApplication" />
       <item itemvalue="Spring Boot.CloudServiceApplication" />
-      <item itemvalue="应用程序.EncryptionUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.EncryptionUtil" />
+        <item itemvalue="Spring Boot.CloudOAuthApplication" />
         <item itemvalue="Spring Boot.CloudServiceApplication" />
         <item itemvalue="Spring Boot.CloudRedisApplication" />
-        <item itemvalue="JUnit.CloudServiceApplicationTest.cacheClientTest" />
-        <item itemvalue="应用程序.EncryptionUtil" />
+        <item itemvalue="HTTP 请求.generated-requests | #27" />
+        <item itemvalue="HTTP 请求.generated-requests | #25" />
       </list>
     </recent_temporary>
   </component>
@@ -390,6 +428,15 @@
       <workItem from="1712631625880" duration="1064000" />
       <workItem from="1712824377783" duration="1098000" />
       <workItem from="1712825782523" duration="397000" />
+      <workItem from="1712898472317" duration="3030000" />
+      <workItem from="1712904464761" duration="3651000" />
+      <workItem from="1712916472585" duration="585000" />
+      <workItem from="1712923294011" duration="37000" />
+      <workItem from="1712925389276" duration="4790000" />
+      <workItem from="1712930262552" duration="3966000" />
+      <workItem from="1712934418109" duration="77000" />
+      <workItem from="1712934674828" duration="113000" />
+      <workItem from="1712934797720" duration="9269000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -422,6 +469,21 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
