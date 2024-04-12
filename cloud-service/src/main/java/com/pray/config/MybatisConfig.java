@@ -30,6 +30,4 @@ public class MybatisConfig {
     RestTemplate restTemplate(){
         return new RestTemplate();
     }
-
-
 }

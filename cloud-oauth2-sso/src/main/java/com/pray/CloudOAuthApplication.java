@@ -1,4 +1,4 @@
-package com.pray.config;
+package com.pray;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -4,6 +4,7 @@ import com.pray.entity.po.Book;
 import com.pray.feign.CacheClient;
 import com.pray.feign.ServiceClient;
 import com.pray.mapper.BorrowMapper;
+import com.pray.utils.cache.PrayCacheClient;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;
@@ -48,8 +49,11 @@ public class CloudServiceApplicationTest {
     private CacheClient client;
     @Resource
     private ServiceClient serviceClient;
+    @Resource
+    private PrayCacheClient cacheClient;
+
     @Test
     void cacheClientTest(){
-        List<Map<String, Object>> borrowUsers = client.getBorrowUsers();
+
     }
 }

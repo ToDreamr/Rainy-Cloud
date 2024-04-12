@@ -26,6 +26,8 @@
         <module>cloud-feign</module>
         <module>cloud-gateway</module>
 		<module>cloud-oauth2-sso</module>
+        <module>cloud-config</module>
+        <module>cloud-security</module>
     </modules>
 
 

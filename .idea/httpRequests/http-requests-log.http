@@ -1,0 +1,19 @@
+POST http://localhost:8500/ua/login
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-04-13T015311.404.json
+
+###
+
+GET http://localhost:8500/feign/token/checkToken
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-04-13T012923.404.json
+
+###
+

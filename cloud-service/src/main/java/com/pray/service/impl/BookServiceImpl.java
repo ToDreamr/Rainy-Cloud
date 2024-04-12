@@ -52,8 +52,8 @@ public class BookServiceImpl extends ServiceImpl<BookMapper, Book> implements Bo
     @Override
     public Result<List<List<BorrowedListVO>>> borrowList() {
         List<Map<String, Object>> mapList = serviceClient.getBorrowUsers();
-        if (mapList.size() == 0) {
-            return Result.ok();
+        if (mapList==null||mapList.size() == 0) {
+            return Result.message(200,"未找到数据");
         }
 
         Map<String, BorrowedListVO> borrowedListMap = new HashMap<>();

@@ -1,14 +1,15 @@
 package com.pray.utils.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pray.entity.po.Role;
 import com.pray.utils.RoleCacheService;
+import com.pray.utils.cache.PrayCacheClient;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 /**
  * RoleCacheServiceImpl
@@ -18,16 +19,21 @@ import java.util.List;
  */
 @Service
 @Slf4j
-public class RoleCacheServiceImpl implements RoleCacheService {
+public class RoleCacheServiceImpl implements RoleCacheService<Object> {
 
-    @Autowired
+    @Resource(name = "cloud-redisTemplate")
     RedisTemplate<Object,Object> redisTemplate;
-    private static final ObjectMapper mapper=new ObjectMapper();
+    @Resource
+    PrayCacheClient prayCacheClient;
+    private static final ObjectMapper MAPPER =new ObjectMapper();
+
     @Override
-    public List<Role> listRole( String key) {
-        log.info("接收到请求缓存key：{}",key);
-        List<Role> listRole = (List<Role>) redisTemplate.opsForValue().get(key);
-        return listRole;//不论是否是空都返回出去
+    public Object cacheValue(String key) {
+        if (redisTemplate.opsForValue().get(key)==null){
+            setCacheValue(key,"");
+            return null;
+        }
+        return redisTemplate.opsForValue().get(key);
     }
 
     /**
@@ -36,8 +42,10 @@ public class RoleCacheServiceImpl implements RoleCacheService {
      * @return
      */
     @Override
-    public Object cacheValue(String key) {
-        return redisTemplate.opsForValue().get(key);
+    public <ID> Object cacheValue(String key, ID id, Class<Object> type,
+                                  Function<ID, Object> callBack,
+                                  Long time, TimeUnit unit) {
+        return prayCacheClient.passThrough(key,id,type,callBack,time,unit);
     }
 
     /**

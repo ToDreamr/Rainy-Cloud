@@ -5,6 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * CloudRedisApplication
@@ -15,6 +16,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 //@EnableAutoDataSourceProxy
 @MapperScan(basePackages = "com.pray.mapper")
 @SpringBootApplication
+@EnableFeignClients(basePackages = "com.pray.feign")//自动装配的开关，实现了Aware接口,同时根据包路径注入Feign调用服务
 @EnableDiscoveryClient
 public class CloudRedisApplication {
     //拆分查询缓存的微服务

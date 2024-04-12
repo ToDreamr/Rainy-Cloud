@@ -1,6 +1,7 @@
 package com.pray.utils;
 
-import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 /**
  * RoleCacheService
@@ -9,8 +10,11 @@ import java.util.List;
  * @since 2023/12/7
  */
 public interface RoleCacheService<T> {
-    List<T> listRole(String key);
     T cacheValue(String key);
+
+    <ID> Object cacheValue(String key, ID id, Class<Object> type,
+                           Function<ID, Object> callBack,
+                           Long time, TimeUnit unit);
 
     Boolean setCacheValue(String key, String cacheData);
 }

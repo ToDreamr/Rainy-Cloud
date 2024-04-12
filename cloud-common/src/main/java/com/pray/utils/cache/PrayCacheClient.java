@@ -50,7 +50,6 @@ public class PrayCacheClient {
 
     /**
      * 缓存空对象解决缓存穿透
-     * @param keyPrefix
      * @param id
      * @param type
      * @param callBack
@@ -59,13 +58,12 @@ public class PrayCacheClient {
      * @return
      * @param <ID>
      */
-    public <ID> Object  PassThrough(String keyPrefix, ID id, Class<Object> type, Function<ID,Object> callBack,
-                                    Long time,TimeUnit unit)    {
-          String key=keyPrefix+id;
+    public <ID> Object passThrough(String key, ID id,Class<Object> type, Function<ID,Object> callBack,
+                                   Long time, TimeUnit unit)    {
           //查询缓存数据
          Object cacheValue = redisTemplate.opsForValue().get(key);
          assert cacheValue != null;
-         if (!cacheValue.equals("")) {
+         if (!"".equals(cacheValue)) {
               return cacheValue;
          }
           //函数逻辑，根据id查数据

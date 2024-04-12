@@ -4,20 +4,43 @@ server:
     #为了防止一会在服务之间跳转导致Cookie打架（因为所有服务地址都是localhost，都会存JSESSIONID）
     #这里修改一下context-path，这样保存的Cookie会使用指定的路径，就不会和其他服务打架了
     #但是注意之后的请求都得在最前面加上这个路径
-    context-path: /sso
+    context-path: /
 spring:
-  security:
-    oauth2:
-      client:
-        registration:
-#          rainyoauth2:
-#            provider: rainyoauth2
-#            client-id: client
-#            client-secret: secret
-#            scope:
-#              - openid
-#            authorization-grant-type: client_credentials
-#            redirect-uri: https://github.com/settings/apps
-          github:
-            clientId: b34cbb765febbc5bbee2
-            clientSecret: 73cf60e5a2aec51c01421e72cad25e22f80a33f5
+  application:
+    name: token-service
+  cloud:
+    nacos:
+      discovery:
+        # 注册中心地址
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+      config:
+        # 配置中心地址
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        username: nacos
+        password: nacos
+        file-extension: yaml
+        name: cloud-service  #相当于data-id
+    openfeign:
+      httpclient:
+        connection-timeout: 200
+        max-connections: 10
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+##          rainyoauth2:
+##            provider: rainyoauth2
+##            client-id: client
+##            client-secret: secret
+##            scope:
+##              - openid
+##            authorization-grant-type: client_credentials
+##            redirect-uri: https://github.com/settings/apps
+#          github:
+#            clientId: b34cbb765febbc5bbee2
+#            clientSecret: 73cf60e5a2aec51c01421e72cad25e22f80a33f5

@@ -90,5 +90,15 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.pray</groupId>
+            <artifactId>cloud-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pray</groupId>
+            <artifactId>cloud-security</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
