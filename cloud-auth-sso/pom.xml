@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cloud-oauth2-sso</artifactId>
+    <artifactId>cloud-auth-sso</artifactId>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>

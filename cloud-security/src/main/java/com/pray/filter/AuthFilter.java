@@ -56,14 +56,17 @@ public class AuthFilter implements Filter {
 
         if (!feignRequestCheck(request)) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            return;
         }
         //如果是token校验请求，放行
         if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())) {
             filterChain.doFilter(request, response);
+            return;
         }
-        String accessToken = request.getHeader("Authorization");
-        if (StrUtil.isBlank(accessToken)) {
+        String accessToken = request.getHeader("authorization");
+        if (StrUtil.isBlank(accessToken)|| "authorization".equals(accessToken)) {
             httpHandler.printServerResponseToWeb(Result.fail(HttpServletResponse.SC_UNAUTHORIZED, "未登录"));
+            return;
         }
         //成功获取了token，从token中解析用户信息
         AuthUser authUser = tokenFeignClient.checkToken(accessToken).getData();

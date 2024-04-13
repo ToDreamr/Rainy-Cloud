@@ -1,3 +1,21 @@
+GET http://localhost:8500/feign/token/checkToken?accessToken=b972bf73e6d442cc87ad8d064d702338
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-04-13T111135.200.json
+
+###
+
+GET http://localhost:8500/feign/token/checkToken
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-04-13T111039.400.json
+
+###
+
 POST http://localhost:8500/ua/login
 Content-Length: 0
 Connection: Keep-Alive
