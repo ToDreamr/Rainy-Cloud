@@ -12,9 +12,9 @@
         <module name="cloud-service" />
         <module name="cloud-common" />
         <module name="cloud-core" />
-        <module name="cloud-oauth2-sso" />
         <module name="cloud-security" />
         <module name="cloud-gateway" />
+        <module name="cloud-auth-sso" />
         <module name="cloud-mapper" />
       </profile>
     </annotationProcessing>

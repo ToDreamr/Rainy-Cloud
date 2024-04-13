@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/CloudOAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/CloudOAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/JwtTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/config/JwtTokenConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/config/Oauth2SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/config/Oauth2SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/controller/TokenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/manager/TokenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/service/AuthDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/AuthDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-oauth2-sso/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -405,7 +393,7 @@
       <workItem from="1712934418109" duration="77000" />
       <workItem from="1712934674828" duration="113000" />
       <workItem from="1712934797720" duration="9269000" />
-      <workItem from="1712975860184" duration="5571000" />
+      <workItem from="1712975860184" duration="5643000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -431,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712398860170</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat:auth-sso拦截器">
+      <option name="closed" value="true" />
+      <created>1712984442937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712984442937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +466,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="微服务-网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="微服务-网关" />
+    <MESSAGE value="feat:auth-sso拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:auth-sso拦截器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
