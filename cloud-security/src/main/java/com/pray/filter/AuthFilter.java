@@ -53,7 +53,7 @@ public class AuthFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-
+        //不需要检查Feign调用请求
         if (!feignRequestCheck(request)) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             return;

@@ -1,7 +1,7 @@
 package com.pray.entity.dto;
 
 /**
- * AuthenticationDTO
+ * AuthenticationDTO 提交登录表单
  *
  * @author 春江花朝秋月夜
  * @since 2024/4/13 1:36

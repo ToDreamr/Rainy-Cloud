@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/model/AuthAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/CloudOAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/CloudOAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/AuthenticationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/AuthenticationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/config/FeignInsideAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/config/FeignInsideAuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +56,11 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="edit" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -75,45 +96,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP 请求.generated-requests | #24.executor": "Run",
-    "Maven.springcloud-stream-demo [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Shell Script.Nacos.executor": "Debug",
-    "Spring Boot.CloudGateWayApplication.executor": "Run",
-    "Spring Boot.CloudRedisApplication.executor": "Run",
-    "Spring Boot.CloudServiceApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "18",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/springcloud-nacos-feign-seata",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "787803558962738f0ee68be5be856cd7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP 请求.generated-requests | #24.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springcloud-stream-demo [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script.Nacos.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CloudGateWayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CloudRedisApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CloudServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springcloud-nacos-feign-seata&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2e88f0884ac433c6ff8e076dae09e9b3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -312,6 +335,8 @@
         <item itemvalue="Spring Boot.CloudServiceApplication" />
         <item itemvalue="Spring Boot.CloudRedisApplication" />
         <item itemvalue="Spring Boot.CloudOAuthApplication" />
+        <item itemvalue="Spring Boot.CloudServiceApplication" />
+        <item itemvalue="Spring Boot.CloudRedisApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -394,6 +419,12 @@
       <workItem from="1712934674828" duration="113000" />
       <workItem from="1712934797720" duration="9269000" />
       <workItem from="1712975860184" duration="5643000" />
+      <workItem from="1712995788118" duration="1154000" />
+      <workItem from="1713076856610" duration="7071000" />
+      <workItem from="1713102295242" duration="49000" />
+      <workItem from="1713195945143" duration="16000" />
+      <workItem from="1713359714217" duration="365000" />
+      <workItem from="1713801204859" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />

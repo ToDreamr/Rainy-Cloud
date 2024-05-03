@@ -7,7 +7,6 @@ import com.pray.manager.TokenFactory;
 import com.pray.utils.Result;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,7 +21,7 @@ public class TokenFeignController implements TokenFeignClient {
     @Resource
     private TokenFactory tokenFactory;
     @Override
-    public Result<AuthUser> checkToken(@RequestParam("accessToken") String accessToken) {
+    public Result<AuthUser> checkToken(String accessToken) {
         log.info("<--------------------解析Token-------------------------->");
         Result<AuthUser> authUser = tokenFactory.getAuthUser(accessToken);
         if (authUser.getCode() != 200) {

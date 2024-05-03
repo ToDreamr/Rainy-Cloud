@@ -25,8 +25,10 @@ public class LoginController {
     @PostMapping("/ua/login")
     public Result<AuthInfoInTokenBO> login(
              @RequestBody AuthenticationDTO authenticationDTO) {
-        Result<AuthInfoInTokenBO> info = authDetailService.getAuthInfoByUserNameAndPassword(authenticationDTO.getCredentials(), authenticationDTO.getPrincipal());
-        tokenFactory.storeAccessToken(info.getData().getAuthUser());
-        return info;
+        //尝试登录
+        Result<AuthInfoInTokenBO> info = authDetailService.getAuthInfoByUserNameAndPassword
+                (authenticationDTO.getCredentials(), authenticationDTO.getPrincipal());
+        AuthInfoInTokenBO authInfoInTokenBO = tokenFactory.storeAccessToken(info.getData().getAuthUser());
+        return Result.ok(authInfoInTokenBO);
     }
 }

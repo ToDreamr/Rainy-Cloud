@@ -6,6 +6,10 @@ server:
     #但是注意之后的请求都得在最前面加上这个路径
     context-path: /
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bootdemo
+    password: 123456
+    username: root
   application:
     name: token-service
   cloud:

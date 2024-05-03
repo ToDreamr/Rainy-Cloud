@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class FeignInsideAuthConfig {
-    public static final String FEIGN_INSIDE_URL_PREFIX = "/feign";
+    public static final String FEIGN_INSIDE_URL_PREFIX = "/redis";
     public String key="feign-inside-auth";
     private String secret;
 

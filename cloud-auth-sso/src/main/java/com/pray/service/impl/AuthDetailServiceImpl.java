@@ -3,8 +3,13 @@ package com.pray.service.impl;
 import cn.hutool.core.util.IdUtil;
 import com.pray.entity.bo.AuthInfoInTokenBO;
 import com.pray.entity.bo.AuthUser;
+import com.pray.exception.CloudServiceException;
+import com.pray.mapper.AuthUserMapper;
+import com.pray.model.AuthAccount;
 import com.pray.service.AuthDetailService;
 import com.pray.utils.Result;
+import jakarta.annotation.Resource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,20 +20,38 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class AuthDetailServiceImpl implements AuthDetailService {
+    @Resource
+    private AuthUserMapper authUserMapper;
+    @Resource
+    private BCryptPasswordEncoder passwordEncoder;
     @Override
     public Result<AuthInfoInTokenBO> getAuthInfoByUserNameAndPassword(String inputUserName, String password) {
+        //获取登录账户
+        AuthAccount authAccount = authUserMapper.getAuthInfoByUserName(inputUserName);
+        if (authAccount==null){
+            throw new CloudServiceException("不存在这样的用户");
+        }
+        if (!passwordEncoder.matches(password,authAccount.getPassword())){
+          throw new CloudServiceException("密码错误，异常的尝试");
+        }
+        //构建上下文保存登录对象
         AuthInfoInTokenBO tokenBO = new AuthInfoInTokenBO();
         AuthUser authUser = new AuthUser();
-        authUser.setUserId(1314L);
+
+        authUser.setUserId((long) authAccount.getId());
 
         String accessToken = IdUtil.simpleUUID();
-        tokenBO.setAccessToken(accessToken);
         authUser.setAccessToken(accessToken);
         String refreshToken = IdUtil.simpleUUID();
-        tokenBO.setRefreshToken(refreshToken);
+        try {
+            tokenBO.setAccessToken(accessToken);
+            tokenBO.setRefreshToken(refreshToken);
+        } catch (Exception e) {
+            throw new CloudServiceException("颁发或刷新Token异常");
+        }
         tokenBO.setExpiresIn(3000);
+        //授权登录用户
         tokenBO.setAuthUser(authUser);
-
         return Result.ok(tokenBO);
     }
 }
