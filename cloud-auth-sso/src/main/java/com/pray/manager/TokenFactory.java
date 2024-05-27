@@ -1,7 +1,9 @@
 package com.pray.manager;
 
+import com.pray.JwtUtil;
 import com.pray.entity.bo.AuthInfoInTokenBO;
 import com.pray.entity.bo.AuthUser;
+import com.pray.model.AuthAccount;
 import com.pray.utils.Result;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
@@ -26,6 +28,8 @@ public class TokenFactory {
     @Resource(name = "cloud-redisTemplate")
     private  RedisTemplate<Object, Object> redisTemplate;
 
+    @Resource
+    JwtUtil jwtUtil;
     private final RedisSerializer<Object> redisSerializer;
 
     private final StringRedisTemplate stringRedisTemplate;
@@ -44,18 +48,25 @@ public class TokenFactory {
 
         String token = authUser.getAccessToken();
         System.out.println("accessToken:"+token);
+
+        AuthAccount authAccount = jwtUtil.toUser(jwtUtil.resolveToken(token));
+
         AuthInfoInTokenBO authInfoInTokenBO = new AuthInfoInTokenBO();
-        authInfoInTokenBO.setAccessToken(token);
         authInfoInTokenBO.setAuthUser(authUser);
-        redisTemplate.opsForValue().set(token, authUser);
+        //存储用户的token键值需要进一步考虑
+
+        String userTokenKey=String.valueOf(authAccount.getId());
+        redisTemplate.opsForValue().set(userTokenKey, authUser);
         return authInfoInTokenBO;
     }
     public Result<AuthUser> getAuthUser(String accessToken) {
-        System.out.println("accessToken:"+accessToken);
-        Object authUser = redisTemplate.opsForValue().get(accessToken);
-        if (authUser == null) {
+        if (accessToken == null) {
             return Result.fail("accessToken 已过期");
         }
-        return Result.ok((AuthUser) authUser);
+        AuthAccount user = jwtUtil.toUser(jwtUtil.resolveToken(accessToken));
+        AuthUser authUser=new AuthUser();
+        authUser.setUserId((long) user.getId());
+        authUser.setAccessToken(accessToken);
+        return Result.ok(authUser);
     }
 }

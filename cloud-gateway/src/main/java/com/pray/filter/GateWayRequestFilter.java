@@ -47,17 +47,17 @@ public class GateWayRequestFilter extends AbstractGatewayFilterFactory<Object> i
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
         //获取请求头的信息
-        List<String> authorization = request.getHeaders().get("Authorization");
-        if (authorization != null && "stranger".equals(authorization.get(0))) {
+        List<String> authorization = request.getHeaders().get("authorization");
+        if (authorization != null) {
             for (String item : whiteUrl) {
                 if (item.equals(request.getURI().getPath())) {
-                    log.info("<----------------------- 陌生请求且但请求路径在白名单内：{} ----------------------->",request.getURI().getPath());
+                    log.info("<----------------------- 陌生请求且但请求路径在白名单内：{} ----------------------->", request.getURI().getPath());
                     return chain.filter(exchange);//放行
                 }
             }
             response.setStatusCode(HttpStatusCode.valueOf(401));
             //不通过，直接拒绝请求
-            log.info("<----------------------- 陌生请求且请求路径不在白名单内：{} ----------------------->",request.getURI().toString());
+            log.info("<----------------------- 陌生请求且请求路径不在白名单内：{} ----------------------->", request.getURI());
             return exchange.getResponse().setComplete();
         }
         log.info("<----------------------- 携带请求头参数：{} ----------------------->",authorization);

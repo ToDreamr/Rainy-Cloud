@@ -1,6 +1,6 @@
 package com.pray.service.impl;
 
-import cn.hutool.core.util.IdUtil;
+import com.pray.JwtUtil;
 import com.pray.entity.bo.AuthInfoInTokenBO;
 import com.pray.entity.bo.AuthUser;
 import com.pray.exception.CloudServiceException;
@@ -24,6 +24,9 @@ public class AuthDetailServiceImpl implements AuthDetailService {
     private AuthUserMapper authUserMapper;
     @Resource
     private BCryptPasswordEncoder passwordEncoder;
+
+    @Resource
+    JwtUtil jwtUtil;
     @Override
     public Result<AuthInfoInTokenBO> getAuthInfoByUserNameAndPassword(String inputUserName, String password) {
         //获取登录账户
@@ -40,11 +43,13 @@ public class AuthDetailServiceImpl implements AuthDetailService {
 
         authUser.setUserId((long) authAccount.getId());
 
-        String accessToken = IdUtil.simpleUUID();
+        String accessToken = jwtUtil.createToken(authAccount.getUsername(),authAccount.getId());
         authUser.setAccessToken(accessToken);
-        String refreshToken = IdUtil.simpleUUID();
+
+
+        String refreshToken = jwtUtil.createRefreshToken();
         try {
-            tokenBO.setAccessToken(accessToken);
+            // TODO 完成刷新token
             tokenBO.setRefreshToken(refreshToken);
         } catch (Exception e) {
             throw new CloudServiceException("颁发或刷新Token异常");

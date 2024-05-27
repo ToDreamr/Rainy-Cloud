@@ -36,15 +36,20 @@ public class AuthFilter implements Filter {
         Filter.super.init(filterConfig);
     }
 
-    //检查feign请求
+
+    /**
+     * 检查是不是feign请求
+     * @param req
+     * @return
+     */
     private boolean feignRequestCheck(HttpServletRequest req) {
-        // 不是feign请求，不用校验
+        // URI不是以redis开头
         if (!req.getRequestURI().startsWith(FeignInsideAuthConfig.FEIGN_INSIDE_URL_PREFIX)) {
             return true;
         }
         String feignInsideSecret = req.getHeader(feignInsideAuthConfig.getKey());
 
-        // 校验feign 请求携带的key 和 value是否正确
+        // 校验feign 请求携带的key（非空） 和 value是否正确
         return !StrUtil.isBlank(feignInsideSecret) && Objects.equals(feignInsideSecret, feignInsideAuthConfig.getSecret());
     }
     @Override
@@ -52,10 +57,11 @@ public class AuthFilter implements Filter {
             throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
+        String accessToken = request.getHeader("authorization");
 
-        //不需要检查Feign调用请求
-        if (!feignRequestCheck(request)) {
-            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        //URI不是以redis开头
+        if (feignRequestCheck(request)&&StrUtil.isBlank(accessToken)) {
+            httpHandler.printServerResponseToWeb(Result.fail(HttpServletResponse.SC_UNAUTHORIZED, "未登录"));
             return;
         }
         //如果是token校验请求，放行
@@ -63,13 +69,14 @@ public class AuthFilter implements Filter {
             filterChain.doFilter(request, response);
             return;
         }
-        String accessToken = request.getHeader("authorization");
-        if (StrUtil.isBlank(accessToken)|| "authorization".equals(accessToken)) {
-            httpHandler.printServerResponseToWeb(Result.fail(HttpServletResponse.SC_UNAUTHORIZED, "未登录"));
+        //成功获取了token，从token中解析用户信息
+        Result<AuthUser> userResult = tokenFeignClient.checkToken(accessToken);
+
+        if (!userResult.isSuccess()){
+            httpHandler.printServerResponseToWeb(Result.fail(HttpServletResponse.SC_UNAUTHORIZED,"未登录"));
             return;
         }
-        //成功获取了token，从token中解析用户信息
-        AuthUser authUser = tokenFeignClient.checkToken(accessToken).getData();
+        AuthUser authUser = userResult.getData();
 
         //保存登录用户的应用上下文
         try {

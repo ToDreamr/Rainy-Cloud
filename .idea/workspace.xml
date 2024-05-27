@@ -5,27 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/model/AuthAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-core/src/test/java/CloudRedisApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/interceptor/FeignInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/CloudOAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/CloudOAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/AuthenticationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/AuthenticationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/config/FeignInsideAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/config/FeignInsideAuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthInfoInTokenBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthInfoInTokenBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/pray/filter/GateWayRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/pray/filter/GateWayRequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +71,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files/apache-maven-3.9.4" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../Program Files/apache-maven-3.9.4" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -116,7 +112,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springcloud-nacos-feign-seata&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springcloud-nacos-feign-seata/cloud-auth-sso/src/test/java&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -146,6 +142,7 @@
       <recent name="com.pray.entity.bo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springcloud-nacos-feign-seata\cloud-auth-sso\src\test\java" />
       <recent name="D:\demo-all\springcloud-stream-demo\jar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -176,7 +173,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Shell Script.Nacos">
+  <component name="RunManager" selected="Shell Script.Redis">
+    <configuration name="CloudAuthApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-auth-sso" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CloudAuthApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudAuthApplicationTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-auth-sso" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CloudAuthApplicationTest" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Sentinel" type="JarApplication">
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -322,6 +338,8 @@
     </configuration>
     <list>
       <item itemvalue="JAR 应用程序.Sentinel" />
+      <item itemvalue="JUnit.CloudAuthApplicationTest" />
+      <item itemvalue="JUnit.CloudAuthApplicationTest.sendMessage" />
       <item itemvalue="Shell Script.Seata" />
       <item itemvalue="Shell Script.Redis" />
       <item itemvalue="Shell Script.Nacos" />
@@ -332,11 +350,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CloudServiceApplication" />
-        <item itemvalue="Spring Boot.CloudRedisApplication" />
         <item itemvalue="Spring Boot.CloudOAuthApplication" />
         <item itemvalue="Spring Boot.CloudServiceApplication" />
         <item itemvalue="Spring Boot.CloudRedisApplication" />
+        <item itemvalue="JUnit.CloudAuthApplicationTest.sendMessage" />
+        <item itemvalue="JUnit.CloudAuthApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -425,6 +443,12 @@
       <workItem from="1713195945143" duration="16000" />
       <workItem from="1713359714217" duration="365000" />
       <workItem from="1713801204859" duration="12000" />
+      <workItem from="1714752192204" duration="3130000" />
+      <workItem from="1714758057704" duration="2843000" />
+      <workItem from="1716785409261" duration="5740000" />
+      <workItem from="1716807100392" duration="2595000" />
+      <workItem from="1716809735297" duration="139000" />
+      <workItem from="1716810112134" duration="3877000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -458,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712984442937</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat:auth-sso拦截器">
+      <option name="closed" value="true" />
+      <created>1714752300333</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714752300333</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,6 +548,16 @@
           <url>jar://$PROJECT_DIR$/../../Maven-Repository/org/springframework/spring-webmvc/6.0.4/spring-webmvc-6.0.4.jar!/org/springframework/web/servlet/DispatcherServlet.class</url>
           <line>690</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

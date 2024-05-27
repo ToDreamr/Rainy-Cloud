@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Objects;
+
 /**
  * <p>
  * Result
@@ -64,5 +66,8 @@ public class Result<T> {
 
     public String jsonResult(){
         return JSONUtil.toJsonStr(this);
+    }
+    public boolean isSuccess() {
+        return Objects.equals(200, this.code);
     }
 }

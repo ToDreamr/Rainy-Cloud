@@ -5,7 +5,7 @@ import com.pray.feign.config.Auth;
 import com.pray.utils.Result;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestHeader;
 
 /**
  * TokenFeignClient
@@ -16,5 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "token-service",contextId ="token")
 public interface TokenFeignClient {
     @GetMapping(value = Auth.CHECK_TOKEN_URI)
-    Result<AuthUser> checkToken(@RequestParam("accessToken") String accessToken);
+    Result<AuthUser> checkToken(@RequestHeader(name = "authorization",required = true)
+                                String accessToken);
 }

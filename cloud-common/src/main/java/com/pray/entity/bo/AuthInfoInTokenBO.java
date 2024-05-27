@@ -14,7 +14,6 @@ public class AuthInfoInTokenBO {
 	 * 用户在自己系统的用户id
 	 */
 	private AuthUser authUser;
-	private String accessToken;
 
 	private String refreshToken;
 
@@ -28,13 +27,6 @@ public class AuthInfoInTokenBO {
 		this.authUser = authUser;
 	}
 
-	public String getAccessToken() {
-		return accessToken;
-	}
-
-	public void setAccessToken(String accessToken) {
-		this.accessToken = accessToken;
-	}
 
 	public String getRefreshToken() {
 		return refreshToken;
@@ -56,7 +48,6 @@ public class AuthInfoInTokenBO {
 	public String toString() {
 		return "AuthInfoInTokenBO{" +
 				"authUser=" + authUser +
-				", accessToken='" + accessToken + '\'' +
 				", refreshToken='" + refreshToken + '\'' +
 				", expiresIn=" + expiresIn +
 				'}';
