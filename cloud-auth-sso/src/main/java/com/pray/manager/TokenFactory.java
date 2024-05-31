@@ -1,6 +1,6 @@
 package com.pray.manager;
 
-import com.pray.JwtUtil;
+import com.pray.util.JwtUtil;
 import com.pray.entity.bo.AuthInfoInTokenBO;
 import com.pray.entity.bo.AuthUser;
 import com.pray.model.AuthAccount;
@@ -30,14 +30,9 @@ public class TokenFactory {
 
     @Resource
     JwtUtil jwtUtil;
-    private final RedisSerializer<Object> redisSerializer;
-
-    private final StringRedisTemplate stringRedisTemplate;
 
     public TokenFactory(RedisSerializer<Object>
             redisSerializer, StringRedisTemplate stringRedisTemplate) {
-        this.redisSerializer = redisSerializer;
-        this.stringRedisTemplate = stringRedisTemplate;
     }
     /**
      * 将用户的部分信息存储在token中，并返回token信息

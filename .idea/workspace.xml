@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-core/src/test/java/CloudRedisApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/interceptor/FeignInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/util/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthInfoInTokenBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthInfoInTokenBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/pray/filter/GateWayRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/pray/filter/GateWayRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -448,7 +435,7 @@
       <workItem from="1716785409261" duration="5740000" />
       <workItem from="1716807100392" duration="2595000" />
       <workItem from="1716809735297" duration="139000" />
-      <workItem from="1716810112134" duration="3877000" />
+      <workItem from="1716810112134" duration="5806000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -490,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714752300333</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify:auth认证和feign内部调用token认证">
+      <option name="closed" value="true" />
+      <created>1716815335494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716815335494</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +525,8 @@
     </ignored-roots>
     <MESSAGE value="微服务-网关" />
     <MESSAGE value="feat:auth-sso拦截器" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:auth-sso拦截器" />
+    <MESSAGE value="modify:auth认证和feign内部调用token认证" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify:auth认证和feign内部调用token认证" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -553,11 +549,6 @@
           <url>file://$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

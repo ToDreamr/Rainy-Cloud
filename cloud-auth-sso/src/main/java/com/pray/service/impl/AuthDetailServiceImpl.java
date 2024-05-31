@@ -1,6 +1,6 @@
 package com.pray.service.impl;
 
-import com.pray.JwtUtil;
+import com.pray.util.JwtUtil;
 import com.pray.entity.bo.AuthInfoInTokenBO;
 import com.pray.entity.bo.AuthUser;
 import com.pray.exception.CloudServiceException;

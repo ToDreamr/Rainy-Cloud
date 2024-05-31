@@ -1,6 +1,6 @@
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.pray.CloudOAuthApplication;
-import com.pray.JwtUtil;
+import com.pray.util.JwtUtil;
 import com.pray.model.AuthAccount;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;

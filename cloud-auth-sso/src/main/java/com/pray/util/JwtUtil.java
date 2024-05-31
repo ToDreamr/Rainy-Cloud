@@ -1,4 +1,4 @@
-package com.pray;
+package com.pray.util;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
