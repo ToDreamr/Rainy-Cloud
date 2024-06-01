@@ -1,6 +1,8 @@
 package com.pray.entity.blog;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.pray.entity.BaseEntity;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +16,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@EqualsAndHashCode(callSuper = false)
+@TableName("article")
 public class Article extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
