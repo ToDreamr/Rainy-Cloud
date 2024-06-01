@@ -50,7 +50,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
     @SentinelResource(value = "listRole_cache",blockHandler = "replaceScheme"
             ,fallback = "fallBack",exceptionsToIgnore = IOException.class) //针对方法进行精准的限流，在IOException时不使用替代方案
     @Override
-    public List listRole(int current, int pageSize) {
+    public List<Role> listRole(int current, int pageSize) {
         //List<Role> listRole = (List<Role>) redisTemplate.opsForValue().get(key);
         //采用简单拼接url的方式来请求数据
         //List<Role> listRole=restTemplate.getForObject("http://localhost:8066/cache/role/list?key="+key,List.class);
@@ -63,7 +63,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
     }
 
     //限流时的替代方案
-    public List replaceScheme(int current, int pageSize, BlockException blockException) {
+    public List<Role> replaceScheme(int current, int pageSize, BlockException blockException) {
         return new ArrayList<Role>();
     }
 

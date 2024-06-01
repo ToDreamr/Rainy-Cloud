@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/annotation/RefreshMqSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/aspect/RefreshMqAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/MybatisMetaDataFill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/XssConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/SqlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/test/java/CloudAuthApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/AuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/AuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/RoleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -125,6 +132,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.pray.filter" />
       <recent name="com.pray.feign.config" />
       <recent name="com.pray.entity.bo" />
     </key>
@@ -161,24 +169,11 @@
     </option>
   </component>
   <component name="RunManager" selected="Shell Script.Redis">
-    <configuration name="CloudAuthApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud-auth-sso" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CloudAuthApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #27" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="27" requestIdentifier="#27" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="CloudAuthApplicationTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cloud-auth-sso" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CloudAuthApplicationTest" />
-      <option name="METHOD_NAME" value="sendMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #28" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="28" requestIdentifier="#28" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="Sentinel" type="JarApplication">
       <extension name="net.ashald.envfile">
@@ -324,9 +319,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.generated-requests | #27" />
+      <item itemvalue="HTTP 请求.generated-requests | #28" />
       <item itemvalue="JAR 应用程序.Sentinel" />
-      <item itemvalue="JUnit.CloudAuthApplicationTest" />
-      <item itemvalue="JUnit.CloudAuthApplicationTest.sendMessage" />
       <item itemvalue="Shell Script.Seata" />
       <item itemvalue="Shell Script.Redis" />
       <item itemvalue="Shell Script.Nacos" />
@@ -337,11 +332,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CloudOAuthApplication" />
-        <item itemvalue="Spring Boot.CloudServiceApplication" />
         <item itemvalue="Spring Boot.CloudRedisApplication" />
-        <item itemvalue="JUnit.CloudAuthApplicationTest.sendMessage" />
-        <item itemvalue="JUnit.CloudAuthApplicationTest" />
+        <item itemvalue="Spring Boot.CloudServiceApplication" />
+        <item itemvalue="Spring Boot.CloudOAuthApplication" />
+        <item itemvalue="HTTP 请求.generated-requests | #28" />
+        <item itemvalue="HTTP 请求.generated-requests | #27" />
       </list>
     </recent_temporary>
   </component>
@@ -436,6 +431,11 @@
       <workItem from="1716807100392" duration="2595000" />
       <workItem from="1716809735297" duration="139000" />
       <workItem from="1716810112134" duration="5806000" />
+      <workItem from="1717136861554" duration="542000" />
+      <workItem from="1717139504504" duration="1110000" />
+      <workItem from="1717141957140" duration="2281000" />
+      <workItem from="1717226938073" duration="1488000" />
+      <workItem from="1717228434036" duration="1399000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -485,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716815335494</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modify:auth认证和feign内部调用token认证">
+      <option name="closed" value="true" />
+      <created>1717136934002</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717136934002</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +519,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="gitee/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -24,7 +24,7 @@ public class AuthConfig {
         // 添加过滤器
         registration.setFilter(authFilter);
         // 设置过滤路径，/*所有路径
-        log.info("<----------------------- 加入拦截路径：----------------------->");
+        log.info("<----------------------- 加入AuthFilter拦截路径：----------------------->");
         registration.addUrlPatterns("/*");
         registration.setName("authFilter");
         // 设置优先级
