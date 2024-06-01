@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisGeneratorConfiguration">
+    <option name="credentials">
+      <map>
+        <entry key="jdbc:mysql://localhost:3306">
+          <value>
+            <Credential>
+              <option name="username" value="root" />
+            </Credential>
+          </value>
+        </entry>
+        <entry key="jdbc:mysql://localhost:3306/bootdemo">
+          <value>
+            <Credential>
+              <option name="username" value="root" />
+            </Credential>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -5,18 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/annotation/RefreshMqSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/aspect/RefreshMqAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/MybatisMetaDataFill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/XssConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/SqlFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/AppGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/DictGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/FileGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/LogGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/OptionGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/AuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/config/AuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,47 +92,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP 请求.generated-requests | #24.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springcloud-stream-demo [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Shell Script.Nacos.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.CloudGateWayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CloudRedisApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CloudServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springcloud-nacos-feign-seata/cloud-auth-sso/src/test/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2e88f0884ac433c6ff8e076dae09e9b3&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #24.executor": "Run",
+    "Maven.springcloud-stream-demo [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.Nacos.executor": "Debug",
+    "Spring Boot.CloudGateWayApplication.executor": "Run",
+    "Spring Boot.CloudRedisApplication.executor": "Run",
+    "Spring Boot.CloudServiceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/springcloud-nacos-feign-seata/cloud-generator/src/main/java/com/pray/generator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "2e88f0884ac433c6ff8e076dae09e9b3",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -137,6 +143,7 @@
       <recent name="com.pray.entity.bo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springcloud-nacos-feign-seata\cloud-generator\src\main\java\com\pray\generator" />
       <recent name="D:\springcloud-nacos-feign-seata\cloud-auth-sso\src\test\java" />
       <recent name="D:\demo-all\springcloud-stream-demo\jar" />
     </key>
@@ -168,9 +175,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Shell Script.Redis">
-    <configuration name="generated-requests | #27" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="27" requestIdentifier="#27" runType="运行单个请求">
-      <method v="2" />
+  <component name="RunManager" selected="应用程序.AppGenerator">
+    <configuration name="AppGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pray.generator.AppGenerator" />
+      <module name="cloud-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pray.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="generated-requests | #28" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="28" requestIdentifier="#28" runType="运行单个请求">
       <method v="2" />
@@ -319,7 +336,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP 请求.generated-requests | #27" />
       <item itemvalue="HTTP 请求.generated-requests | #28" />
       <item itemvalue="JAR 应用程序.Sentinel" />
       <item itemvalue="Shell Script.Seata" />
@@ -329,14 +345,15 @@
       <item itemvalue="Spring Boot.CloudOAuthApplication" />
       <item itemvalue="Spring Boot.CloudRedisApplication" />
       <item itemvalue="Spring Boot.CloudServiceApplication" />
+      <item itemvalue="应用程序.AppGenerator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CloudRedisApplication" />
+        <item itemvalue="应用程序.AppGenerator" />
         <item itemvalue="Spring Boot.CloudServiceApplication" />
+        <item itemvalue="Spring Boot.CloudRedisApplication" />
         <item itemvalue="Spring Boot.CloudOAuthApplication" />
         <item itemvalue="HTTP 请求.generated-requests | #28" />
-        <item itemvalue="HTTP 请求.generated-requests | #27" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +452,8 @@
       <workItem from="1717139504504" duration="1110000" />
       <workItem from="1717141957140" duration="2281000" />
       <workItem from="1717226938073" duration="1488000" />
-      <workItem from="1717228434036" duration="1399000" />
+      <workItem from="1717228434036" duration="6032000" />
+      <workItem from="1717239204527" duration="2791000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -493,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717136934002</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add:xss过滤器和Mq注解">
+      <option name="closed" value="true" />
+      <created>1717229864772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717229864772</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +572,8 @@
     <MESSAGE value="微服务-网关" />
     <MESSAGE value="feat:auth-sso拦截器" />
     <MESSAGE value="modify:auth认证和feign内部调用token认证" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify:auth认证和feign内部调用token认证" />
+    <MESSAGE value="add:xss过滤器和Mq注解" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:xss过滤器和Mq注解" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

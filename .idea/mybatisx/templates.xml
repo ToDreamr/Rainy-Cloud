@@ -6,7 +6,7 @@
         <option name="generateConfig">
           <GenerateConfig>
             <option name="annotationType" value="MYBATIS_PLUS3" />
-            <option name="basePackage" value="com.pray" />
+            <option name="basePackage" value="com.rainy" />
             <option name="basePath" value="src/main/java" />
             <option name="classNameStrategy" value="camel" />
             <option name="encoding" value="UTF-8" />
@@ -15,8 +15,8 @@
             <option name="ignoreFieldSuffix" value="" />
             <option name="ignoreTablePrefix" value="" />
             <option name="ignoreTableSuffix" value="" />
-            <option name="moduleName" value="cloud-auth-sso" />
-            <option name="modulePath" value="$PROJECT_DIR$/cloud-auth-sso" />
+            <option name="moduleName" value="cloud-mapper" />
+            <option name="modulePath" value="$PROJECT_DIR$/cloud-mapper" />
             <option name="moduleUIInfoList">
               <list>
                 <ModuleInfoGo>
@@ -26,7 +26,7 @@
                   <option name="encoding" value="${domain.encoding}" />
                   <option name="fileName" value="${domain.fileName}Mapper" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}Mapper.java" />
-                  <option name="modulePath" value="$PROJECT_DIR$/cloud-auth-sso" />
+                  <option name="modulePath" value="$PROJECT_DIR$/cloud-mapper" />
                   <option name="packageName" value="${domain.basePackage}.mapper" />
                 </ModuleInfoGo>
                 <ModuleInfoGo>
@@ -36,30 +36,51 @@
                   <option name="encoding" value="${domain.encoding}" />
                   <option name="fileName" value="${domain.fileName}Mapper" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}Mapper.xml" />
-                  <option name="modulePath" value="$PROJECT_DIR$/cloud-auth-sso" />
+                  <option name="modulePath" value="$PROJECT_DIR$/cloud-mapper" />
                   <option name="packageName" value="mapper" />
+                </ModuleInfoGo>
+                <ModuleInfoGo>
+                  <option name="basePath" value="${domain.basePath}" />
+                  <option name="configFileName" value="serviceImpl.ftl" />
+                  <option name="configName" value="serviceImpl" />
+                  <option name="encoding" value="${domain.encoding}" />
+                  <option name="fileName" value="${domain.fileName}ServiceImpl" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}ServiceImpl.java" />
+                  <option name="modulePath" value="$PROJECT_DIR$/cloud-mapper" />
+                  <option name="packageName" value="${domain.basePackage}.service.impl" />
+                </ModuleInfoGo>
+                <ModuleInfoGo>
+                  <option name="basePath" value="${domain.basePath}" />
+                  <option name="configFileName" value="serviceInterface.ftl" />
+                  <option name="configName" value="serviceInterface" />
+                  <option name="encoding" value="${domain.encoding}" />
+                  <option name="fileName" value="${domain.fileName}Service" />
+                  <option name="fileNameWithSuffix" value="${domain.fileName}Service.java" />
+                  <option name="modulePath" value="$PROJECT_DIR$/cloud-mapper" />
+                  <option name="packageName" value="${domain.basePackage}.service" />
                 </ModuleInfoGo>
               </list>
             </option>
             <option name="needToStringHashcodeEquals" value="true" />
             <option name="needsComment" value="true" />
             <option name="needsModel" value="false" />
-            <option name="relativePackage" value="entity" />
+            <option name="relativePackage" value="" />
             <option name="superClass" value="" />
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="AuthUser" />
-                  <option name="tableName" value="user" />
+                  <option name="className" value="Article" />
+                  <option name="tableName" value="article" />
                 </TableUIInfo>
               </list>
             </option>
-            <option name="templatesName" value="default-empty" />
+            <option name="templatesName" value="mybatis-plus3" />
+            <option name="useLombokPlugin" value="true" />
           </GenerateConfig>
         </option>
-        <option name="moduleName" value="cloud-auth-sso" />
+        <option name="moduleName" value="cloud-mapper" />
         <option name="projectPath" value="$PROJECT_DIR$" />
-        <option name="templateName" value="default-empty" />
+        <option name="templateName" value="mybatis-plus3" />
       </TemplateContext>
     </option>
   </component>

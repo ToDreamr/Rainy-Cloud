@@ -28,6 +28,7 @@
 		<module>cloud-auth-sso</module>
         <module>cloud-config</module>
         <module>cloud-security</module>
+        <module>cloud-generator</module>
     </modules>
 
 

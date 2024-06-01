@@ -16,6 +16,7 @@
         <module name="cloud-gateway" />
         <module name="cloud-auth-sso" />
         <module name="cloud-mapper" />
+        <module name="cloud-generator" />
       </profile>
     </annotationProcessing>
   </component>
