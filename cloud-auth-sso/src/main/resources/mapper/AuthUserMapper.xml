@@ -5,11 +5,11 @@
 <mapper namespace="com.pray.mapper.AuthUserMapper">
 
     <resultMap id="BaseResultMap" type="com.pray.model.AuthAccount">
-        <id property="id" column="id" jdbcType="INTEGER"/>
-        <result property="username" column="username" jdbcType="VARCHAR"/>
-        <result property="password" column="password" jdbcType="VARCHAR"/>
-        <result property="email" column="email" jdbcType="VARCHAR"/>
-        <result property="enabled" column="enabled" jdbcType="TINYINT"/>
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="enabled" column="enabled" jdbcType="TINYINT"/>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -17,6 +17,6 @@
         email,enabled
     </sql>
     <select id="getAuthInfoByUserName" resultType="com.pray.model.AuthAccount">
-        select id,username,email,password from bootdemo.user where username =#{username};
+        select id,username,email,enabled,password from bootdemo.user where username =#{username};
     </select>
 </mapper>

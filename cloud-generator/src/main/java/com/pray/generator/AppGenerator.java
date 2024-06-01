@@ -21,14 +21,13 @@ public class AppGenerator {
                 })
                 .strategyConfig(builder -> {
                     builder // 设置需要生成的表名
-                            .addInclude("sort").addInclude("im_chat_user_group_message","im_chat_user_message")
-//                            .addInclude("article")
-//                            .addInclude("comment")
-//
-//                            .addInclude("family","history_info","im_chat_group")
-//                            .addInclude("label","im_chat_group_user","im_chat_user_friend")
-//                            .addInclude("resource","resource_path","sys_config","tree_hole")
-//                            .addInclude("user","web_info","weiyan")
+                            .addInclude("article")
+                            .addInclude("comment")
+
+                            .addInclude("family","history_info","im_chat_group")
+                            .addInclude("label","im_chat_group_user","im_chat_user_friend")
+                            .addInclude("resource","resource_path","sys_config","tree_hole")
+                            .addInclude("user","web_info","weiyan")
                     ;
 
                     builder.entityBuilder()

@@ -5,41 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/ArticleVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/BaseRequestVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/CommentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/FamilyVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/FileVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/ResourcePathVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/annotation/RefreshMqSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/annotation/RefreshMqSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/aspect/RefreshMqAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/aspect/RefreshMqAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/BorrowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/service/impl/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/service/impl/BorrowServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/AppGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/AppGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/ArticleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/BorrowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/BorrowMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/HistoryInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/HistoryInfoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/TreeHoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/TreeHoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/FamilyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/FamilyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/HistoryInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/HistoryInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/ImChatGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/ImChatGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/ImChatGroupUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/ImChatGroupUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/ImChatUserFriendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/ImChatUserFriendMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/LabelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/LabelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/ResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/ResourceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/ResourcePathMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/ResourcePathMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/SysConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/SysConfigMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/TreeHoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/TreeHoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/xml/WebInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/xml/WebInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/resources/mapper/BorrowMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +59,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
+    <option name="RESET_MODE" value="MIXED" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -109,47 +95,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP 请求.generated-requests | #24.executor": "Run",
-    "Maven.springcloud-stream-demo [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script.Nacos.executor": "Debug",
-    "Spring Boot.CloudGateWayApplication.executor": "Run",
-    "Spring Boot.CloudRedisApplication.executor": "Run",
-    "Spring Boot.CloudServiceApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/springcloud-nacos-feign-seata/cloud-mapper/src/main/resources/xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "2e88f0884ac433c6ff8e076dae09e9b3",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP 请求.generated-requests | #24.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springcloud-stream-demo [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script.Nacos.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CloudGateWayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CloudRedisApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CloudServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springcloud-nacos-feign-seata/cloud-generator/src/main/java/com/pray/generator&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2e88f0884ac433c6ff8e076dae09e9b3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -160,25 +146,22 @@
       <recent name="com.pray.entity.bo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\springcloud-nacos-feign-seata\cloud-mapper\src\main\resources\xml" />
-      <recent name="D:\springcloud-nacos-feign-seata\cloud-common\src\main\java\com\pray\entity\vo\response" />
       <recent name="D:\springcloud-nacos-feign-seata\cloud-generator\src\main\java\com\pray\generator" />
       <recent name="D:\springcloud-nacos-feign-seata\cloud-auth-sso\src\test\java" />
       <recent name="D:\demo-all\springcloud-stream-demo\jar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\springcloud-nacos-feign-seata\cloud-auth-sso\src\main\resources\mapper" />
-      <recent name="D:\springcloud-nacos-feign-seata\cloud-auth-sso\src\main\resources" />
       <recent name="D:\springcloud-nacos-feign-seata\doc\readme" />
       <recent name="D:\springcloud-nacos-feign-seata\doc\img" />
       <recent name="D:\springcloud-nacos-feign-seata\doc" />
+      <recent name="D:\demo-all\springcloud-stream-demo\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.pray.mapper" />
       <recent name="com.pray.entity.bo" />
       <recent name="com.pray" />
       <recent name="com.pray.handler" />
       <recent name="com.pray.utils" />
+      <recent name="com.pray.common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,7 +178,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Shell Script.Nacos">
+  <component name="RunManager" selected="应用程序.AppGenerator">
     <configuration name="AppGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pray.generator.AppGenerator" />
       <module name="cloud-generator" />
@@ -369,10 +352,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CloudRedisApplication" />
         <item itemvalue="Spring Boot.CloudServiceApplication" />
-        <item itemvalue="Spring Boot.CloudOAuthApplication" />
+        <item itemvalue="Spring Boot.CloudRedisApplication" />
         <item itemvalue="应用程序.AppGenerator" />
+        <item itemvalue="Spring Boot.CloudOAuthApplication" />
         <item itemvalue="HTTP 请求.generated-requests | #28" />
       </list>
     </recent_temporary>
@@ -473,7 +456,7 @@
       <workItem from="1717141957140" duration="2281000" />
       <workItem from="1717226938073" duration="1488000" />
       <workItem from="1717228434036" duration="6032000" />
-      <workItem from="1717239204527" duration="7605000" />
+      <workItem from="1717239204527" duration="2791000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -539,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717229864772</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add:solve the conflic of dependency">
+      <option name="closed" value="true" />
+      <created>1717258618037</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717258618037</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +584,8 @@
     <MESSAGE value="feat:auth-sso拦截器" />
     <MESSAGE value="modify:auth认证和feign内部调用token认证" />
     <MESSAGE value="add:xss过滤器和Mq注解" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:xss过滤器和Mq注解" />
+    <MESSAGE value="add:solve the conflic of dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:solve the conflic of dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

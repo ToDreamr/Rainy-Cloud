@@ -36,7 +36,6 @@ public class AuthFilter implements Filter {
         Filter.super.init(filterConfig);
     }
 
-
     /**
      * 检查是不是feign请求
      * @param req
@@ -65,7 +64,7 @@ public class AuthFilter implements Filter {
             return;
         }
         //如果是token校验请求，放行
-        if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())) {
+        if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())||request.getRequestURI().endsWith("/register")) {
             filterChain.doFilter(request, response);
             return;
         }

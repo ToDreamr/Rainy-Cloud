@@ -1,10 +1,7 @@
 package com.pray.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.pray.entity.blog.TreeHole;
-import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
@@ -15,5 +12,5 @@ import java.util.List;
  * @since 2024-06-01
  */
 public interface TreeHoleMapper extends BaseMapper<TreeHole> {
-    List<TreeHole> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+
 }
