@@ -72,4 +72,6 @@ public class RedisSerializerConfig {
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
+
+
 }

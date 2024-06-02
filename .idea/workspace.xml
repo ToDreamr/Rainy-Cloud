@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/mapper/AuthUserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/resources/mapper/AuthUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Family.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/UserVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/annotation/RefreshMqSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/annotation/RefreshMqSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/aspect/RefreshMqAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/mq/aspect/RefreshMqAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/BorrowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/AppGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/AppGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/BorrowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/BorrowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/HistoryInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/HistoryInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/TreeHoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/TreeHoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/java/com/pray/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/src/main/java/com/pray/config/RedisSerializerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/FileGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/LogGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/LogGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/OptionGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-generator/src/main/java/com/pray/generator/OptionGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +116,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;2e88f0884ac433c6ff8e076dae09e9b3&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -178,7 +168,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.AppGenerator">
+  <component name="RunManager" selected="Shell Script.Nacos">
     <configuration name="AppGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pray.generator.AppGenerator" />
       <module name="cloud-generator" />
@@ -353,9 +343,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CloudServiceApplication" />
+        <item itemvalue="Spring Boot.CloudOAuthApplication" />
         <item itemvalue="Spring Boot.CloudRedisApplication" />
         <item itemvalue="应用程序.AppGenerator" />
-        <item itemvalue="Spring Boot.CloudOAuthApplication" />
         <item itemvalue="HTTP 请求.generated-requests | #28" />
       </list>
     </recent_temporary>
@@ -457,6 +447,8 @@
       <workItem from="1717226938073" duration="1488000" />
       <workItem from="1717228434036" duration="6032000" />
       <workItem from="1717239204527" duration="2791000" />
+      <workItem from="1717299965809" duration="2612000" />
+      <workItem from="1717309985635" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
@@ -530,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717258618037</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add:solve the conflic of dependency">
+      <option name="closed" value="true" />
+      <created>1717258622701</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717258622701</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,5 +616,9 @@
         <watch expression="((HeaderWriterResponse)this).request" custom="org.springframework.security.web.header.HeaderWriterFilter.HeaderWriterResponse" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

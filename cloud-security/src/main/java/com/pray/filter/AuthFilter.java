@@ -64,7 +64,7 @@ public class AuthFilter implements Filter {
             return;
         }
         //如果是token校验请求，放行
-        if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())||request.getRequestURI().endsWith("/register")) {
+        if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())||request.getRequestURI().endsWith("/update")) {
             filterChain.doFilter(request, response);
             return;
         }

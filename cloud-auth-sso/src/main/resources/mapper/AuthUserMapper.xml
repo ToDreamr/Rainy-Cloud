@@ -17,6 +17,6 @@
         email,enabled
     </sql>
     <select id="getAuthInfoByUserName" resultType="com.pray.model.AuthAccount">
-        select id,username,email,enabled,password from bootdemo.user where username =#{username};
+        select * from bootdemo.user where username =#{username};
     </select>
 </mapper>

@@ -11,9 +11,9 @@ public class OptionGenerator {
 
         FastAutoGenerator.create(Constants.DB_URL, Constants.DB_USERNAME, Constants.DB_PASSWORD)
                 .globalConfig(builder -> {
-                    builder.author("bage") // 设置作者
+                    builder.author("春江花朝秋月夜") // 设置作者
 //                            .fileOverride() // 覆盖已生成文件
-                            .outputDir(Constants.PROJECT_ROOT + "\\edatope-option\\src\\main\\java"); // 指定输出目录
+                            .outputDir(Constants.PROJECT_ROOT + "\\cloud-option\\src\\main\\java"); // 指定输出目录
                 })
                 .packageConfig(builder -> {
                     builder.parent(Constants.BASE_PACKAGE + ".option") ;// 设置父包名
