@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloud-feign/cloud-feign.iml" filepath="$PROJECT_DIR$/cloud-feign/cloud-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-security/cloud-security.iml" filepath="$PROJECT_DIR$/cloud-security/cloud-security.iml" />
     </modules>
   </component>
 </project>

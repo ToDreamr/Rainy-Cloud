@@ -19,5 +19,8 @@
         <module name="cloud-generator" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-nacos-feign-seata" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

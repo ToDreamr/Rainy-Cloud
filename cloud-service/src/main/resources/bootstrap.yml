@@ -6,9 +6,9 @@ spring:
   application:
     name: cloudservice
   datasource:
-    url: jdbc:mysql://localhost:3306/bootdemo
-    password: 123456
+    url: jdbc:mysql://localhost:3306/backend-base
     username: root
+    password: 123456
   cloud:
     nacos:
       discovery:
@@ -23,7 +23,7 @@ spring:
         namespace: public
         username: nacos
         password: nacos
-        file-extension: yaml
+        file-extension: yml
         name: cloud-service  #相当于data-id
     openfeign:
       httpclient:
@@ -52,6 +52,9 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: tb_
 logging:
   level:
     com.alibaba.cloud.sentinel.SentinelProperties: trace

@@ -64,22 +64,21 @@ public class AuthFilter implements Filter {
             return;
         }
         //如果是token校验请求，放行
-        if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())||request.getRequestURI().endsWith("/update")) {
+        if (Auth.CHECK_TOKEN_URI.equals(request.getRequestURI())||request.getRequestURI().endsWith("/update")||request.getRequestURI().contains("/register")) {
             filterChain.doFilter(request, response);
             return;
         }
         //成功获取了token，从token中解析用户信息
-        Result<AuthUser> userResult = tokenFeignClient.checkToken(accessToken);
+        AuthUser userResult = tokenFeignClient.checkToken(accessToken);
 
-        if (!userResult.isSuccess()){
+        if (userResult==null){
             httpHandler.printServerResponseToWeb(Result.fail(HttpServletResponse.SC_UNAUTHORIZED,"未登录"));
             return;
         }
-        AuthUser authUser = userResult.getData();
 
         //保存登录用户的应用上下文
         try {
-            AuthUserContext.set(authUser);
+            AuthUserContext.set(userResult);
             filterChain.doFilter(request, response);
         }finally {
             AuthUserContext.remove();

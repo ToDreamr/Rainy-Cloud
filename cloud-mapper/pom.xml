@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pray</groupId>
-        <artifactId>springcloud-nacos-feign-seata</artifactId>
+        <artifactId>Rainy-Cloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 

@@ -1,7 +1,6 @@
 package com.pray.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.pray.entity.po.Account;
 
 import java.util.List;
@@ -14,4 +13,5 @@ import java.util.List;
  */
 public interface UserService extends IService<Account> {
     List<Account>getUserList();
+
 }

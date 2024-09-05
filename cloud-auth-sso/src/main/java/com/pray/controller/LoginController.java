@@ -31,4 +31,8 @@ public class LoginController {
         AuthInfoInTokenBO authInfoInTokenBO = tokenFactory.storeAccessToken(info.getData().getAuthUser());
         return Result.ok(authInfoInTokenBO);
     }
+//    @PostMapping("/ua/register")
+//    public Result<AuthInfoInTokenBO> login(){
+//
+//    }
 }

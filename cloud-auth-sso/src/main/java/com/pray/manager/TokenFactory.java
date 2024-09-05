@@ -1,10 +1,9 @@
 package com.pray.manager;
 
-import com.pray.util.JwtUtil;
 import com.pray.entity.bo.AuthInfoInTokenBO;
 import com.pray.entity.bo.AuthUser;
 import com.pray.model.AuthAccount;
-import com.pray.utils.Result;
+import com.pray.util.JwtUtil;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,14 +53,14 @@ public class TokenFactory {
         redisTemplate.opsForValue().set(userTokenKey, authUser);
         return authInfoInTokenBO;
     }
-    public Result<AuthUser> getAuthUser(String accessToken) {
+    public AuthUser getAuthUser(String accessToken) {
         if (accessToken == null) {
-            return Result.fail("accessToken 已过期");
+            return null;
         }
         AuthAccount user = jwtUtil.toUser(jwtUtil.resolveToken(accessToken));
         AuthUser authUser=new AuthUser();
         authUser.setUserId((long) user.getId());
         authUser.setAccessToken(accessToken);
-        return Result.ok(authUser);
+        return authUser;
     }
 }

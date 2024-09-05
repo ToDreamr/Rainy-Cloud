@@ -5,7 +5,6 @@ import com.pray.exception.CloudServiceException;
 import com.pray.feign.TokenFeignClient;
 import com.pray.feign.config.Auth;
 import com.pray.manager.TokenFactory;
-import com.pray.utils.Result;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,13 +23,18 @@ public class TokenFeignController implements TokenFeignClient {
     private TokenFactory tokenFactory;
     @GetMapping(value = Auth.CHECK_TOKEN_URI)
     @Override
-    public Result<AuthUser> checkToken(String accessToken) {
+    public AuthUser checkToken(String accessToken) {
         log.info("<--------------------解析Token-------------------------->");
         log.info(this.getClass().getName()+"获取到accessToken：{}",accessToken);
-        Result<AuthUser> authUser = tokenFactory.getAuthUser(accessToken);
-        if (authUser.getCode() != 200) {
-           throw new CloudServiceException("token校验失败");
+        try {
+            AuthUser tokenSelectRes = tokenFactory.getAuthUser(accessToken);
+            if (tokenSelectRes == null) {
+                throw new CloudServiceException("token校验失败");
+            }
+            return tokenSelectRes;
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        return authUser;
+        return null;
     }
 }
