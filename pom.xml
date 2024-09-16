@@ -21,14 +21,13 @@
 	<modules>
 		<module>cloud-common</module>
         <module>cloud-mapper</module>
-		<module>cloud-service</module>
-        <module>cloud-core</module>
         <module>cloud-feign</module>
         <module>cloud-gateway</module>
 		<module>cloud-auth-sso</module>
         <module>cloud-config</module>
         <module>cloud-security</module>
         <module>cloud-generator</module>
+        <module>cloud-module</module>
     </modules>
 
 

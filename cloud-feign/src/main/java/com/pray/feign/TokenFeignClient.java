@@ -1,6 +1,6 @@
 package com.pray.feign;
 
-import com.pray.entity.bo.AuthUser;
+import com.pray.entity.auth.AuthUser;
 import com.pray.feign.config.Auth;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

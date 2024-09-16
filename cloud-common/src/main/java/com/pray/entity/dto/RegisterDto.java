@@ -22,7 +22,13 @@ public class RegisterDto {
      */
     public String password;
 
+    /**
+     * 邮箱
+     */
     public String email;
 
+    /**
+     * 验证码
+     */
     public String code;
 }

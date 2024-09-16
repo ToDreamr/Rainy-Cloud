@@ -9,6 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <description>系统代码生成器</description>
     <artifactId>cloud-generator</artifactId>
 
     <dependencies>

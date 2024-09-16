@@ -1,7 +1,7 @@
 package com.pray.manager;
 
-import com.pray.entity.bo.AuthInfoInTokenBO;
-import com.pray.entity.bo.AuthUser;
+import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthUser;
 import com.pray.model.AuthAccount;
 import com.pray.util.JwtUtil;
 import jakarta.annotation.Resource;

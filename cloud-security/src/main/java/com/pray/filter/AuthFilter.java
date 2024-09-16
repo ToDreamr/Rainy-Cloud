@@ -2,12 +2,12 @@ package com.pray.filter;
 
 import cn.hutool.core.util.StrUtil;
 import com.pray.auth.AuthUserContext;
-import com.pray.entity.bo.AuthUser;
+import com.pray.entity.auth.AuthUser;
 import com.pray.feign.TokenFeignClient;
 import com.pray.feign.config.Auth;
 import com.pray.feign.config.FeignInsideAuthConfig;
 import com.pray.handler.HttpHandler;
-import com.pray.utils.Result;
+import com.pray.entity.Result;
 import jakarta.annotation.Resource;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;

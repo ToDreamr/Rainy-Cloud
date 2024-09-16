@@ -3,7 +3,7 @@ package com.pray.handler;
 import cn.hutool.core.util.CharsetUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pray.exception.CloudServiceException;
-import com.pray.utils.Result;
+import com.pray.entity.Result;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,13 +1,13 @@
 package com.pray.service.impl;
 
 import com.pray.util.JwtUtil;
-import com.pray.entity.bo.AuthInfoInTokenBO;
-import com.pray.entity.bo.AuthUser;
+import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthUser;
 import com.pray.exception.CloudServiceException;
 import com.pray.mapper.AuthUserMapper;
 import com.pray.model.AuthAccount;
 import com.pray.service.AuthDetailService;
-import com.pray.utils.Result;
+import com.pray.entity.Result;
 import jakarta.annotation.Resource;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

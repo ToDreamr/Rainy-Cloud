@@ -1,6 +1,6 @@
 package com.pray.controller;
 
-import com.pray.entity.bo.AuthUser;
+import com.pray.entity.auth.AuthUser;
 import com.pray.exception.CloudServiceException;
 import com.pray.feign.TokenFeignClient;
 import com.pray.feign.config.Auth;

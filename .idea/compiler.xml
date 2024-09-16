@@ -10,8 +10,8 @@
         <module name="cloud-config" />
         <module name="cloud-feign" />
         <module name="cloud-service" />
+        <module name="cloud-cache" />
         <module name="cloud-common" />
-        <module name="cloud-core" />
         <module name="cloud-security" />
         <module name="cloud-gateway" />
         <module name="cloud-auth-sso" />

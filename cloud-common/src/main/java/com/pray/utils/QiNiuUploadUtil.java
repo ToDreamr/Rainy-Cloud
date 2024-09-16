@@ -1,6 +1,6 @@
 package com.pray.utils;
 
-import com.pray.common.QiniuConfigProperties;
+import com.pray.config.QiniuConfigProperties;
 import com.qiniu.common.QiniuException;
 import com.qiniu.http.Response;
 import com.qiniu.storage.BucketManager;

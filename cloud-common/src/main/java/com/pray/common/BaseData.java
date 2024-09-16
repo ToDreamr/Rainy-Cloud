@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 /**
  * <p>
- * BaseData
+ * BaseData 浅拷贝自动化工具,使用反射写的，效率不高
  * 实现继承自这个接口的实体的浅拷贝自动化工具
  * <p>
  *

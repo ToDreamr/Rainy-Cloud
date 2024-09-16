@@ -1,10 +1,10 @@
 package com.pray.controller;
 
-import com.pray.entity.bo.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthInfoInTokenBO;
 import com.pray.entity.dto.AuthenticationDTO;
 import com.pray.manager.TokenFactory;
 import com.pray.service.AuthDetailService;
-import com.pray.utils.Result;
+import com.pray.entity.Result;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,8 +31,4 @@ public class LoginController {
         AuthInfoInTokenBO authInfoInTokenBO = tokenFactory.storeAccessToken(info.getData().getAuthUser());
         return Result.ok(authInfoInTokenBO);
     }
-//    @PostMapping("/ua/register")
-//    public Result<AuthInfoInTokenBO> login(){
-//
-//    }
 }

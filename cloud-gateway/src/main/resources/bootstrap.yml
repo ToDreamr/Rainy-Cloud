@@ -24,13 +24,13 @@ spring:
     gateway:
       routes:
       - id: cloud-service-http #‘-’代表数组
-        uri: lb://cloudservice
+        uri: lb://cloud-service
         predicates:
           - Path=/service/**
         filters:
           - GateWayRequestFilter
       - id: cloud-redis-http
-        uri: lb://cloudcore
+        uri: lb://cloud-cache
         predicates:
           - Path=/redis/**
         filters:

@@ -6,7 +6,7 @@ import java.util.Date;
 
 /**
  * <p>
- * AuthorizeVO
+ * AuthorizeVO 认证成功返回前端的统一信息
  * <p>
  *
  * @author 春江花朝秋月夜
@@ -14,7 +14,16 @@ import java.util.Date;
  */
 @Data
 public class AuthorizeVO {
+    /**
+     * 用户名
+     */
     String username;
+    /**
+     * 过期时间
+     */
     Date expireTime;
+    /**
+     * 用户token
+     */
     String token;
 }

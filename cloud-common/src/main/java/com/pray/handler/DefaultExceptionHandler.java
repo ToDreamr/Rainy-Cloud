@@ -1,7 +1,7 @@
 package com.pray.handler;
 
 import com.pray.exception.CloudServiceException;
-import com.pray.utils.Result;
+import com.pray.entity.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

@@ -1,9 +1,9 @@
 package com.pray.auth;
 
-import com.pray.entity.bo.AuthUser;
+import com.pray.entity.auth.AuthUser;
 
 /**
- * AuthUserContext
+ * AuthUserContext 通过ThreadLocal封装的用户上下文
  *
  * @author 春江花朝秋月夜
  * @since 2024/4/12 21:43

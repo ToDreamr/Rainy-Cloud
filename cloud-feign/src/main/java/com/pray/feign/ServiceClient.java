@@ -18,7 +18,7 @@ import java.util.Map;
  * @since 2024/1/24
  */
 @Service
-@FeignClient(value = "cloudcore",configuration = DefaultFeignConfig.class,fallback = ServerClientFallback.class )
+@FeignClient(value = "cloud-cache",configuration = DefaultFeignConfig.class,fallback = ServerClientFallback.class )
 public interface ServiceClient {
     /**
      * 获取缓存值

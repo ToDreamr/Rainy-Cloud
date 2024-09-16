@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * <p>
- * WeiXinCheckUrl
+ * WeiXinCheckUrl 微信登录校验请求体
  * <p>
  *
  * @author 春江花朝秋月夜

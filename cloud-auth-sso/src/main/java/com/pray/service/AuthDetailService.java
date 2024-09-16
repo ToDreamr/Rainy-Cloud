@@ -1,7 +1,7 @@
 package com.pray.service;
 
-import com.pray.entity.bo.AuthInfoInTokenBO;
-import com.pray.utils.Result;
+import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.Result;
 
 /**
  * AuthDetailService

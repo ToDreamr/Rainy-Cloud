@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * <p>
- * UserDto
+ * UserDto  用户基本信息
  * <p>
  *
  * @author 春江花朝秋月夜
