@@ -5,107 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="add:solve the conflic of dependency">
-      <change afterPath="$PROJECT_DIR$/cloud-module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/manager/TokenFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/AuthDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/AuthDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/common/BaseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/common/BaseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/common/PrayLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/common/RainyLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/common/QiniuConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/config/QiniuConfigProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/common/RestrictHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/RestrictHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/constants/PrayConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/constants/RainyConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Family.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/HistoryInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/ImChatGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/ImChatGroupUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/ImChatUserFriend.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/ImChatUserGroupMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/ImChatUserMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/Resource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/ResourcePath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/SysConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/TreeHole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/blog/WebInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthInfoInTokenBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/auth/AuthInfoInTokenBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/bo/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/auth/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/RedisData.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/redis/RedisData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/RegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/RegisterDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/request/WeiXinCheckUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/request/WeiXinCheckUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/AuthorizeVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/AuthorizeVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/FamilyVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/vo/response/FileVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/DefaultExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/DefaultExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/HttpHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/HttpHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/MybatisMetaDataFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/config/MybatisMetaDataFillConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/QiNiuUploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/QiNiuUploadUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/cache/CacheUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/cache/CacheUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/cache/PrayCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/cache/RainyCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/utils/cache/RedisCacheUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/cache/RedisCacheUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/CloudRedisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/java/com/pray/CloudCacheApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/java/com/pray/controller/BorrowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/controller/RoleCacheController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/service/BorrowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/java/com/pray/service/BorrowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/service/impl/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/java/com/pray/service/impl/BorrowServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/utils/RoleCacheService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/java/com/pray/utils/impl/RoleCacheServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-core/src/test/java/CloudRedisApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/test/java/CloudCacheApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/ServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/ServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign/src/main/java/com/pray/feign/TokenFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-generator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-mapper/src/main/resources/mapper/BorrowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mapper/src/main/resources/mapper/BorrowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/auth/AuthUserContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/auth/AuthUserContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/CloudServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/CloudServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/aop/CloudLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/aop/CloudLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/aop/PrayLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/aop/PrayLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/aop/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/aop/SocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/aop/SocketServerAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/aop/SocketServerAop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/config/MybatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/config/ScheduledConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/config/ScheduledConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/MsgPostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/RoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/SentinelBlockedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/controller/SentinelBlockedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/SocketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/controller/SocketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/UserBorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/controller/UserBorrowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/AsyncMsgPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/AsyncMsgPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/BookUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/BookUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/BookUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/impl/BookUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/pray/service/impl/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/impl/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/src/test/java/CloudServiceApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/test/java/CloudServiceApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +103,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
@@ -546,7 +447,7 @@
       <workItem from="1724156505635" duration="1627000" />
       <workItem from="1724232119881" duration="733000" />
       <workItem from="1725506489291" duration="427000" />
-      <workItem from="1726493956286" duration="6838000" />
+      <workItem from="1726493956286" duration="8887000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />
