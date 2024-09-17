@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static com.pray.entity.Result.success;
-import static com.pray.entity.Result.toAjax;
+import static com.pray.entity.Result.convertResult;
 
 /**
  * 系统访问记录
@@ -43,7 +43,7 @@ public class SysLogininforController extends BaseController {
     @RequiresPermissions("monitor:logininfor:remove")
     @DeleteMapping("/{infoIds}")
     public Result remove(@PathVariable Long[] infoIds) {
-        return toAjax(logininforService.deleteLogininforByIds(infoIds));
+        return convertResult(logininforService.deleteLogininforByIds(infoIds));
     }
 
     @RequiresPermissions("monitor:logininfor:remove")
@@ -68,6 +68,6 @@ public class SysLogininforController extends BaseController {
     @PostMapping
     public Result add(@RequestBody SysLogininfor logininfor)
     {
-        return toAjax(logininforService.insertLogininfor(logininfor));
+        return convertResult(logininforService.insertLogininfor(logininfor));
     }
 }

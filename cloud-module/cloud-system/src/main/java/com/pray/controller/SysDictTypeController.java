@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static com.pray.entity.Result.success;
-import static com.pray.entity.Result.toAjax;
+import static com.pray.entity.Result.convertResult;
 
 /**
  * 数据字典信息
@@ -55,7 +55,7 @@ public class SysDictTypeController extends BaseController {
         if (UserConstants.NOT_UNIQUE.equals(dictTypeService.checkDictTypeUnique(dict))) {
             return Result.fail("新增字典'" + dict.getDictName() + "'失败，字典类型已存在");
         }
-        return toAjax(dictTypeService.insertDictType(dict));
+        return convertResult(dictTypeService.insertDictType(dict));
     }
 
     /**
@@ -68,7 +68,7 @@ public class SysDictTypeController extends BaseController {
             return Result.fail("修改字典'" + dict.getDictName() + "'失败，字典类型已存在");
         }
         dict.setUpdateBy("默认用户");
-        return toAjax(dictTypeService.updateDictType(dict));
+        return convertResult(dictTypeService.updateDictType(dict));
     }
 
     /**

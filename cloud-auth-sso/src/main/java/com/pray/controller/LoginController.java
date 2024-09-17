@@ -26,9 +26,10 @@ public class LoginController {
     public Result<AuthInfoInTokenBO> login(
              @RequestBody AuthenticationDTO authenticationDTO) {
         //尝试登录
-        Result<AuthInfoInTokenBO> info = authDetailService.getAuthInfoByUserNameAndPassword
-                (authenticationDTO.getCredentials(), authenticationDTO.getPrincipal());
-        AuthInfoInTokenBO authInfoInTokenBO = tokenFactory.storeAccessToken(info.getData().getAuthUser());
-        return Result.ok(authInfoInTokenBO);
+        AuthInfoInTokenBO info =
+                authDetailService.getAuthInfoByUserNameAndPassword(authenticationDTO.getCredentials(), authenticationDTO.getPrincipal());
+
+        AuthInfoInTokenBO authInfoInTokenBO = tokenFactory.storeAccessToken(info.getAuthUser());
+        return Result.success(authInfoInTokenBO);
     }
 }

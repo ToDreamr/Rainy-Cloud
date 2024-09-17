@@ -7,7 +7,6 @@ import com.pray.constants.UserConstants;
 import com.pray.domain.SysUserRole;
 import com.pray.entity.Result;
 import com.pray.entity.auth.AuthUser;
-import com.pray.entity.sys.SysDept;
 import com.pray.entity.sys.SysRole;
 import com.pray.entity.sys.SysUser;
 import com.pray.poi.ExcelUtil;
@@ -26,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.pray.entity.Result.success;
-import static com.pray.entity.Result.toAjax;
+import static com.pray.entity.Result.convertResult;
 
 /**
  * 角色信息
@@ -84,7 +83,7 @@ public class SysRoleController extends BaseController {
             return Result.fail("新增角色'" + role.getRoleName() + "'失败，角色权限已存在");
         }
         role.setCreateBy("默认用户");
-        return toAjax(roleService.insertRole(role));
+        return convertResult(roleService.insertRole(role));
 
     }
 
@@ -153,7 +152,7 @@ public class SysRoleController extends BaseController {
 //                        , permissionService.getMenuPermission(newUser)));
             }
         }
-        return toAjax(count);
+        return convertResult(count);
     }
 
     /**
@@ -182,7 +181,7 @@ public class SysRoleController extends BaseController {
 //                        , permissionService.getMenuPermission(newUser)));
             }
         }
-        return toAjax(count);
+        return convertResult(count);
     }
 
     /**
@@ -210,7 +209,7 @@ public class SysRoleController extends BaseController {
 //                        , permissionService.getMenuPermission(newUser)));
             }
         }
-        return toAjax(count);
+        return convertResult(count);
     }
 
     /**
@@ -242,7 +241,7 @@ public class SysRoleController extends BaseController {
 //                        , permissionService.getMenuPermission(newUser)));
             }
         }
-        return toAjax(count);
+        return convertResult(count);
     }
 
     /**
@@ -265,7 +264,7 @@ public class SysRoleController extends BaseController {
                 }
             }
         }
-        return toAjax(count);
+        return convertResult(count);
     }
 
     /**
@@ -289,18 +288,8 @@ public class SysRoleController extends BaseController {
                 }
             }
         }
-        return toAjax(count);
+        return convertResult(count);
     }
 
-    /**
-     * 获取对应角色部门树列表
-     */
-    @RequiresPermissions("system:role:query")
-    @GetMapping(value = "/deptTree/{roleId}")
-    public Result deptTree(@PathVariable("roleId") Long roleId) {
-        Result ajax = success();
-        ajax.put("checkedKeys", deptService.selectDeptListByRoleId(roleId));
-        ajax.put("depts", deptService.selectDeptTreeList(new SysDept()));
-        return ajax;
-    }
+
 }

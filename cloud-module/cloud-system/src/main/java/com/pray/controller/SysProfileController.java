@@ -12,7 +12,6 @@ import com.pray.utils.FileUploadUtils;
 import com.pray.utils.MimeTypeUtils;
 import com.pray.utils.StringUtils;
 import jakarta.annotation.Resource;
-import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -29,19 +28,6 @@ public class SysProfileController extends BaseController {
 
     @Resource
     private TokenService tokenService;
-
-    /**
-     * 个人信息
-     */
-    @GetMapping
-    public Result profile() {
-        AuthUser loginUser = SecurityUtils.getLoginUser();
-        SysUser user = loginUser.getUser();
-        Result ajax = Result.success(user);
-        ajax.put("roleGroup", userService.selectUserRoleGroup(loginUser.getUsername()));
-        ajax.put("postGroup", userService.selectUserPostGroup(loginUser.getUsername()));
-        return ajax;
-    }
 
     /**
      * 修改用户
@@ -82,7 +68,7 @@ public class SysProfileController extends BaseController {
     public Result updatePwd(String oldPassword, String newPassword) {
         AuthUser loginUser = SecurityUtils.getLoginUser();
         String userName = loginUser.getUsername();
-        String password = loginUser.getPassword();
+        String password = "admin";
         if (!SecurityUtils.matchesPassword(oldPassword, password)) {
             return Result.fail("修改密码失败，旧密码错误");
         }
@@ -108,12 +94,10 @@ public class SysProfileController extends BaseController {
             // TODO: 2024.05.11 文件上传微服务调用
             String avatar = FileUploadUtils.upload(RainyConfig.getAvatarPath(), file, MimeTypeUtils.IMAGE_EXTENSION);
             if (userService.updateUserAvatar(loginUser.getUsername(), avatar)) {
-                Result ajax = Result.success();
-                ajax.put("imgUrl", avatar);
                 // 更新缓存用户头像
                 loginUser.getUser().setAvatar(avatar);
                 tokenService.setLoginUser(loginUser);
-                return ajax;
+                return Result.ok();
             }
         }
         return Result.fail("上传图片异常，请联系管理员");

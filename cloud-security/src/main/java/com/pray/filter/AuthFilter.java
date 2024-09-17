@@ -69,16 +69,16 @@ public class AuthFilter implements Filter {
             return;
         }
         //成功获取了token，从token中解析用户信息
-        AuthUser userResult = tokenFeignClient.checkToken(accessToken);
+        AuthUser authUser = tokenFeignClient.checkToken(accessToken);
 
-        if (userResult==null){
+        if (authUser==null){
             httpHandler.printServerResponseToWeb(Result.fail(HttpServletResponse.SC_UNAUTHORIZED,"未登录"));
             return;
         }
 
         //保存登录用户的应用上下文
         try {
-            AuthUserContext.set(userResult);
+            AuthUserContext.set(authUser);
             filterChain.doFilter(request, response);
         }finally {
             AuthUserContext.remove();

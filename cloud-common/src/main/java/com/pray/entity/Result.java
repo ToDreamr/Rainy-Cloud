@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.HashMap;
 import java.util.Objects;
 
 /**
@@ -20,7 +19,7 @@ import java.util.Objects;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Result<T> extends HashMap<String,Object> {
+public class Result<T> {
     int code;
     String message;
     T data;
@@ -43,11 +42,11 @@ public class Result<T> extends HashMap<String,Object> {
     }
 
     public static<T> Result<T> ok(T data, String message){
-        return  new Result(200,message,data);
+        return  new Result<T>(200,message,data);
     }
 
     public static<T> Result<T> ok(T data){
-        return new Result(200,data);
+        return new Result<T>(200,data);
     }
     public static <T> Result<T> ok(){
         return ok(null);
@@ -61,11 +60,9 @@ public class Result<T> extends HashMap<String,Object> {
     public static <T> Result <T> fail(){return new Result<>(500);}
 
     public static <T> Result <T>message(int code,String message){
-        return new Result(code,message,null);
+        return new Result<T>(code,message,null);
     }
-    public static <T> Result <T> success(T data){
-        return new Result<>(data);
-    }
+    public static <T> Result <T> success(T data){return new Result<>(data);}
     public static <T> Result <T> success(){
         return new Result<>();
     }
@@ -91,7 +88,7 @@ public class Result<T> extends HashMap<String,Object> {
      * @param rows 影响行数
      * @return 操作结果
      */
-    public static Result toAjax(int rows) {
+    public static Result<?> convertResult(int rows) {
         return rows > 0 ? Result.success() : Result.fail();
     }
     /**

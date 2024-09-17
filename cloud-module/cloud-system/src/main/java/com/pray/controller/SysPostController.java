@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static com.pray.entity.Result.success;
-import static com.pray.entity.Result.toAjax;
+import static com.pray.entity.Result.convertResult;
 
 /**
  * 岗位信息操作处理
@@ -57,7 +57,7 @@ public class SysPostController extends BaseController {
             return Result.fail("新增岗位'" + post.getPostName() + "'失败，岗位编码已存在");
         }
         post.setCreateBy("默认用户");
-        return toAjax(postService.insertPost(post));
+        return convertResult(postService.insertPost(post));
     }
 
     /**
@@ -72,7 +72,7 @@ public class SysPostController extends BaseController {
             return Result.fail("修改岗位'" + post.getPostName() + "'失败，岗位编码已存在");
         }
         post.setUpdateBy("默认用户");
-        return toAjax(postService.updatePost(post));
+        return convertResult(postService.updatePost(post));
     }
 
     /**
@@ -81,7 +81,7 @@ public class SysPostController extends BaseController {
     @RequiresPermissions("system:post:remove")
     @DeleteMapping("/{postIds}")
     public Result remove(@PathVariable Long[] postIds) {
-        return toAjax(postService.deletePostByIds(postIds));
+        return convertResult(postService.deletePostByIds(postIds));
     }
 
     /**

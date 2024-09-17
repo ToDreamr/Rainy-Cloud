@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static com.pray.entity.Result.success;
-import static com.pray.entity.Result.toAjax;
+import static com.pray.entity.Result.convertResult;
 
 /**
  * 菜单信息
@@ -62,19 +62,6 @@ public class SysMenuController extends BaseController {
         return success(menuService.buildMenuTreeSelect(menus));
     }
 
-    /**
-     * 加载对应角色菜单列表树
-     */
-    @GetMapping(value = "/roleMenuTreeselect/{roleId}")
-    public Result roleMenuTreeselect(@PathVariable("roleId") Long roleId) {
-        //todo 分配用户id
-//        Long userId = SecurityUtils.getUserId();
-        List<SysMenu> menus = menuService.selectMenuList(1l);
-        Result ajax = success();
-        ajax.put("checkedKeys", menuService.selectMenuListByRoleId(roleId));
-        ajax.put("menus", menuService.buildMenuTreeSelect(menus));
-        return ajax;
-    }
 
     /**
      * 新增菜单
@@ -88,7 +75,7 @@ public class SysMenuController extends BaseController {
             return Result.fail("新增菜单'" + menu.getMenuName() + "'失败，地址必须以http(s)://开头");
         }
         menu.setCreateBy("默认用户");
-        return toAjax(menuService.insertMenu(menu));
+        return convertResult(menuService.insertMenu(menu));
     }
 
     /**
@@ -106,7 +93,7 @@ public class SysMenuController extends BaseController {
         }
         //todo 通过用户
         menu.setUpdateBy("默认用户");
-        return toAjax(menuService.updateMenu(menu));
+        return convertResult(menuService.updateMenu(menu));
     }
 
     /**
@@ -121,7 +108,7 @@ public class SysMenuController extends BaseController {
         if (menuService.checkMenuExistRole(menuId)) {
             return Result.warn("菜单已分配,不允许删除");
         }
-        return toAjax(menuService.deleteMenuById(menuId));
+        return convertResult(menuService.deleteMenuById(menuId));
     }
 
     /**

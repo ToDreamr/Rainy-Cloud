@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.pray.entity.Result.success;
-import static com.pray.entity.Result.toAjax;
+import static com.pray.entity.Result.convertResult;
 
 /**
  * 数据字典信息
@@ -74,7 +74,7 @@ public class SysDictDataController extends BaseController {
     @RequiresPermissions("system:dict:add")
     @PostMapping
     public Result add(@Validated @RequestBody SysDictData dict) {
-        return toAjax(dictDataService.insertDictData(dict));
+        return convertResult(dictDataService.insertDictData(dict));
     }
 
     /**
@@ -84,7 +84,7 @@ public class SysDictDataController extends BaseController {
     @PutMapping
     public Result edit(@Validated @RequestBody SysDictData dict) {
         dict.setUpdateBy("默认用户");
-        return toAjax(dictDataService.updateDictData(dict));
+        return convertResult(dictDataService.updateDictData(dict));
     }
 
     /**

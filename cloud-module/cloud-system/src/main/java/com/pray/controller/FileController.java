@@ -4,8 +4,6 @@ package com.pray.controller;
 import com.pray.config.RainyConfig;
 import com.pray.config.ServerConfig;
 import com.pray.constants.Constants;
-import com.pray.entity.Result;
-import com.pray.utils.FileUploadUtils;
 import com.pray.utils.FileUtils;
 import com.pray.utils.StringUtils;
 import jakarta.annotation.Resource;
@@ -15,13 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author 春江花朝秋月夜
@@ -64,59 +57,7 @@ public class FileController {
         }
     }
 
-    /**
-     * 通用上传请求（单个）
-     */
-    @PostMapping("/upload")
-    public Result uploadFile(MultipartFile file) throws Exception {
-        try {
-            // 上传文件路径
-            String filePath = RainyConfig.getUploadPath();
-            // 上传并返回新文件名称
-            String fileName = FileUploadUtils.upload(filePath, file);
-            String url = serverConfig.getUrl() + fileName;
-            Result ajax = Result.success();
-            ajax.put("url", url);
-            ajax.put("fileName", fileName);
-            ajax.put("newFileName", FileUtils.getName(fileName));
-            ajax.put("originalFilename", file.getOriginalFilename());
-            return ajax;
-        } catch (Exception e) {
-            return Result.fail(e.getMessage());
-        }
-    }
 
-    /**
-     * 通用上传请求（多个）
-     */
-    @PostMapping("/uploads")
-    public Result uploadFiles(List<MultipartFile> files) throws Exception {
-        try {
-            // 上传文件路径
-            String filePath = RainyConfig.getUploadPath();
-            List<String> urls = new ArrayList<String>();
-            List<String> fileNames = new ArrayList<String>();
-            List<String> newFileNames = new ArrayList<String>();
-            List<String> originalFilenames = new ArrayList<String>();
-            for (MultipartFile file : files) {
-                // 上传并返回新文件名称
-                String fileName = FileUploadUtils.upload(filePath, file);
-                String url = serverConfig.getUrl() + fileName;
-                urls.add(url);
-                fileNames.add(fileName);
-                newFileNames.add(FileUtils.getName(fileName));
-                originalFilenames.add(file.getOriginalFilename());
-            }
-            Result ajax = Result.success();
-            ajax.put("urls", StringUtils.join(urls, FILE_DELIMETER));
-            ajax.put("fileNames", StringUtils.join(fileNames, FILE_DELIMETER));
-            ajax.put("newFileNames", StringUtils.join(newFileNames, FILE_DELIMETER));
-            ajax.put("originalFilenames", StringUtils.join(originalFilenames, FILE_DELIMETER));
-            return ajax;
-        } catch (Exception e) {
-            return Result.fail(e.getMessage());
-        }
-    }
 
     /**
      * 本地资源通用下载

@@ -1,6 +1,5 @@
 package com.pray.entity.auth;
 
-import com.alibaba.fastjson2.annotation.JSONField;
 import com.pray.entity.sys.SysUser;
 import lombok.Data;
 
@@ -105,9 +104,5 @@ public class AuthUser implements Serializable {
         this.deptId = deptId;
         this.user = user;
         this.permissions = permissions;
-    }
-    @JSONField(serialize = false)
-    public String getPassword() {
-        return user.getPassword();
     }
 }
