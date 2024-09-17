@@ -12,7 +12,10 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="backend-base" />
-            <name qname="bootdemo" />
+            <name qname="pmhub-gen" />
+            <name qname="pmhub-nacos" />
+            <name qname="pmhub-project" />
+            <name qname="pmhub-system" />
           </node>
         </introspection-scope>
       </schema-mapping>

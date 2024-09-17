@@ -3,8 +3,8 @@ package com.pray.cache;
 import cn.hutool.core.util.BooleanUtil;
 import com.pray.constants.RainyConstants;
 import com.pray.redis.RedisData;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
@@ -26,7 +26,7 @@ import java.util.function.Function;
 @Component
 public class RainyCacheClient {
     private static final ExecutorService CACHE_REBUILD_EXECUTOR = Executors.newFixedThreadPool(10);
-    @Autowired
+    @Resource
     RedisTemplate<Object,Object> redisTemplate;
 
     public void set(String key, Object value, Long time, TimeUnit unit){

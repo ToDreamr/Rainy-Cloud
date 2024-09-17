@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config" />
+        <module name="cloud-system" />
         <module name="cloud-feign" />
         <module name="cloud-service" />
         <module name="cloud-cache" />

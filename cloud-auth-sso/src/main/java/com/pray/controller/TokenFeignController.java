@@ -1,7 +1,7 @@
 package com.pray.controller;
 
 import com.pray.entity.auth.AuthUser;
-import com.pray.exception.CloudServiceException;
+import com.pray.exception.CloudException;
 import com.pray.feign.TokenFeignClient;
 import com.pray.feign.config.Auth;
 import com.pray.manager.TokenFactory;
@@ -29,7 +29,7 @@ public class TokenFeignController implements TokenFeignClient {
         try {
             AuthUser tokenSelectRes = tokenFactory.getAuthUser(accessToken);
             if (tokenSelectRes == null) {
-                throw new CloudServiceException("token校验失败");
+                throw new CloudException("token校验失败");
             }
             return tokenSelectRes;
         }catch (Exception e){

@@ -1,10 +1,12 @@
 package com.pray.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Map;
 
 /**
  * BaseEntity
@@ -66,5 +68,17 @@ public class BaseEntity implements Serializable {
     private Boolean deleted;
 
 
+    /**
+     * 备注
+     */
+    @TableField(exist = false)
+    private String remark;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @TableField(exist = false)
+    private Map<String, Object> params;
+    public String getRemark() {
+        return remark;
+    }
 
 }

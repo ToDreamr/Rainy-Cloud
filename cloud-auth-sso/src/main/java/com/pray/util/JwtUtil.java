@@ -6,7 +6,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.pray.exception.CloudServiceException;
+import com.pray.exception.CloudException;
 import com.pray.model.AuthAccount;
 import org.springframework.stereotype.Component;
 
@@ -41,7 +41,7 @@ public class JwtUtil {
             return verify;
         }catch (JWTDecodeException e){
             //抛出异常交给下一级处理
-            throw new CloudServiceException("token解析失败");
+            throw new CloudException("token解析失败");
         }
     }
 

@@ -1,10 +1,12 @@
 package com.pray.entity;
 
 import cn.hutool.json.JSONUtil;
+import com.pray.utils.StringUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashMap;
 import java.util.Objects;
 
 /**
@@ -18,7 +20,7 @@ import java.util.Objects;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Result<T> {
+public class Result<T> extends HashMap<String,Object> {
     int code;
     String message;
     T data;
@@ -34,6 +36,10 @@ public class Result<T> {
     public Result(int code, T data) {
         this.code = code;
         this.data = data;
+    }
+
+    public Result(String message) {
+        this.message = message;
     }
 
     public static<T> Result<T> ok(T data, String message){
@@ -52,14 +58,22 @@ public class Result<T> {
     public static <T> Result <T> fail(int code,String errMessage){
         return new Result<>(code,errMessage,null);
     }
+    public static <T> Result <T> fail(){return new Result<>(500);}
 
     public static <T> Result <T>message(int code,String message){
         return new Result(code,message,null);
     }
-    public <T> Result<T> data(T data){
-
+    public static <T> Result <T> success(T data){
         return new Result<>(data);
     }
+    public static <T> Result <T> success(){
+        return new Result<>();
+    }
+    public static <T> Result <T> warn(String warnMessage){
+        return new Result<>(warnMessage);
+    }
+
+    public <T> Result<T> data(T data){return new Result<>(data);}
     public  <T> Result<T> code(int code){
         return new Result<>(code);
     }
@@ -70,4 +84,21 @@ public class Result<T> {
     public boolean isSuccess() {
         return Objects.equals(200, this.code);
     }
+
+    /**
+     * 响应返回结果
+     *
+     * @param rows 影响行数
+     * @return 操作结果
+     */
+    public static Result toAjax(int rows) {
+        return rows > 0 ? Result.success() : Result.fail();
+    }
+    /**
+     * 页面跳转
+     */
+    public String redirect(String url) {
+        return StringUtils.format("redirect:{}", url);
+    }
+
 }

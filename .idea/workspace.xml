@@ -5,8 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea14033-c9a0-4785-8116-dff21a93e5fc" name="更改" comment="add:solve the conflic of dependency">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33139f0d-0546-46be-a534-039787924e5e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/controller/TokenFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/service/impl/AuthDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth-sso/src/main/java/com/pray/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/cache/RainyCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/cache/RainyCacheClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/auth/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/entity/auth/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/DefaultExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/DefaultExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/HttpHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-common/src/main/java/com/pray/handler/HttpHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-module/cloud-cache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-cache/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/impl/BookUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/cloud-service/src/main/java/com/pray/service/impl/BookUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/SqlFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-security/src/main/java/com/pray/filter/SqlFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +95,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2cAUzrSpxW1XhZErcnj3JuX1Zs3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -96,19 +122,20 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DevelopENV/nativeNacos/nacos/bin/startup.cmd",
+    "last_opened_file_path": "D:/Rainy-Cloud/cloud-ui/src/assets/logo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/springcloud-nacos-feign-seata/cloud-security/src/main/java/com/pray/Main.java",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "问题",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.40344828",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "27850673bd1b0de5a81270d1327a97e8",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "d4f7f97d7994cbfc2ea5569279d21c25",
+    "ts.external.directory.path": "D:\\DevelopENV\\IntelliJ IDEA 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -127,9 +154,11 @@
       <recent name="com.pray.entity.bo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\springcloud-nacos-feign-seata\cloud-generator\src\main\java\com\pray\generator" />
-      <recent name="D:\springcloud-nacos-feign-seata\cloud-auth-sso\src\test\java" />
-      <recent name="D:\demo-all\springcloud-stream-demo\jar" />
+      <recent name="D:\Rainy-Cloud\cloud-ui\src\assets\logo" />
+      <recent name="D:\Rainy-Cloud\cloud-ui\src\assets\images" />
+      <recent name="D:\Rainy-Cloud" />
+      <recent name="D:\Rainy-Cloud\cloud-common\src\main\java\com\pray\utils" />
+      <recent name="D:\Rainy-Cloud\cloud-security\src\main\java\com\pray\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Rainy-Cloud\cloud-module" />
@@ -139,11 +168,11 @@
       <recent name="D:\demo-all\springcloud-stream-demo\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.pray.entity.bo" />
-      <recent name="com.pray" />
-      <recent name="com.pray.handler" />
       <recent name="com.pray.utils" />
-      <recent name="com.pray.common" />
+      <recent name="com.pray.constants" />
+      <recent name="com.pray.config" />
+      <recent name="com.pray.auth" />
+      <recent name="com.pray.annotation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -160,20 +189,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudCacheApplication">
-    <configuration name="AppGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pray.generator.AppGenerator" />
-      <module name="cloud-generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pray.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Sentinel" type="JarApplication">
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -241,6 +257,7 @@
     <configuration name="CloudCacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-cache" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudCacheApplication" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pray.*" />
@@ -317,22 +334,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pray.CloudSystemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/cloud-ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JAR 应用程序.Sentinel" />
+      <item itemvalue="npm.dev" />
       <item itemvalue="Shell Script.Seata" />
       <item itemvalue="Shell Script.Redis" />
       <item itemvalue="Shell Script.Nacos" />
       <item itemvalue="Spring Boot.CloudGateWayApplication" />
+      <item itemvalue="Spring Boot.CloudSystemApplication" />
       <item itemvalue="Spring Boot.CloudCacheApplication" />
       <item itemvalue="Spring Boot.CloudOAuthApplication" />
       <item itemvalue="Spring Boot.CloudServiceApplication" />
-      <item itemvalue="应用程序.AppGenerator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="Spring Boot.CloudOAuthApplication" />
+        <item itemvalue="Spring Boot.CloudSystemApplication" />
         <item itemvalue="Spring Boot.CloudCacheApplication" />
         <item itemvalue="Spring Boot.CloudServiceApplication" />
-        <item itemvalue="Spring Boot.CloudOAuthApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +490,10 @@
       <workItem from="1724156505635" duration="1627000" />
       <workItem from="1724232119881" duration="733000" />
       <workItem from="1725506489291" duration="427000" />
-      <workItem from="1726493956286" duration="8887000" />
+      <workItem from="1726493956286" duration="10872000" />
+      <workItem from="1726505248407" duration="8829000" />
+      <workItem from="1726553580107" duration="7414000" />
+      <workItem from="1726563014463" duration="7114000" />
     </task>
     <task id="LOCAL-00001" summary="微服务-网关">
       <option name="closed" value="true" />

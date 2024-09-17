@@ -35,6 +35,12 @@ spring:
           - Path=/redis/**
         filters:
           - GateWayRequestFilter
+      - id: cloud-system-http
+        uri: lb://cloud-system
+        predicates:
+          - Path=/system/**
+        filters:
+          - GateWayRequestFilter
       discovery:
         locator:
           enabled: false

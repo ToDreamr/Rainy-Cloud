@@ -19,9 +19,21 @@
     <file url="file://$PROJECT_DIR$/cloud-module/cloud-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-module/cloud-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-module/cloud-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-module/cloud-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-module/cloud-system/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-module/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-security/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/.env.development" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/.env.production" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/.eslintignore" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/.node-version" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/babel.config.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/public/favicon_backup.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/src/assets/images/login-background-bac.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/src/assets/images/login-background.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/src/assets/logo/logo.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud-ui/vue.config.js" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

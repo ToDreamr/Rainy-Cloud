@@ -1,7 +1,7 @@
 package com.pray.handler;
 
-import com.pray.exception.CloudServiceException;
 import com.pray.entity.Result;
+import com.pray.exception.CloudException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class DefaultExceptionHandler {
     private static final Logger logger = LoggerFactory.getLogger(DefaultExceptionHandler.class);
 
-    @ExceptionHandler(CloudServiceException.class)
-    public ResponseEntity<Result<Object>> cloudExceptionHandler(CloudServiceException e) {
+    @ExceptionHandler(CloudException.class)
+    public ResponseEntity<Result<Object>> cloudExceptionHandler(CloudException e) {
         logger.error("cloudExceptionHandler", e);
 
         int responseEnum = e.getCode();

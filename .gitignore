@@ -2,3 +2,5 @@ seata/
 /jar
 mid-work/
 .idea/httpRequests
+.idea
+.vscode

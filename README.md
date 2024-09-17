@@ -19,7 +19,7 @@
 
 GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务调用采用Open-Feign开源项目
 一并接入负载均衡。
-
+56
 #####  GateWay拦截器：
 ```java
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
@@ -84,10 +84,10 @@ GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务�
         //获取登录账户
         AuthAccount authAccount = authUserMapper.getAuthInfoByUserName(inputUserName);
         if (authAccount==null){
-            throw new CloudServiceException("不存在这样的用户");
+            throw new CloudException("不存在这样的用户");
         }
         if (!passwordEncoder.matches(password,authAccount.getPassword())){
-          throw new CloudServiceException("密码错误，异常的尝试");
+          throw new CloudException("密码错误，异常的尝试");
         }
         //构建上下文保存登录对象
         AuthInfoInTokenBO tokenBO = new AuthInfoInTokenBO();
@@ -104,7 +104,7 @@ GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务�
             // TODO 完成刷新token
             tokenBO.setRefreshToken(refreshToken);
         } catch (Exception e) {
-            throw new CloudServiceException("颁发或刷新Token异常");
+            throw new CloudException("颁发或刷新Token异常");
         }
         tokenBO.setExpiresIn(3000);
         //授权登录用户
@@ -113,13 +113,13 @@ GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务�
     }
 ```
 
-使用全局异常处理：CloudServiceException
+使用全局异常处理：CloudException
 ```java
 public class DefaultExceptionHandler {
     private static final Logger logger = LoggerFactory.getLogger(DefaultExceptionHandler.class);
 
-    @ExceptionHandler(CloudServiceException.class)
-    public ResponseEntity<Result<Object>> cloudExceptionHandler(CloudServiceException e) {
+    @ExceptionHandler(CloudException.class)
+    public ResponseEntity<Result<Object>> cloudExceptionHandler(CloudException e) {
         logger.error("cloudExceptionHandler", e);
 
         int responseEnum = e.getCode();
@@ -167,5 +167,19 @@ public interface ServiceClient {
     List<Map<String, Object>> selectBorrowDetails(@PathVariable(value = "userId") int userId, @PathVariable(value = "bookId") int bookId);
 }
 ```
-整体项目结构：
+
+## git commit规范
+
+| 功能    | commit规范         | 示例                  | 描述                          |
+|-------|------------------|---------------------|-----------------------------|
+| 新功能   | feat/module_name | feat/multi_merchant | 开发一个新功能                     |
+| bug修复 | bugfix/fix_name  | bugfix/user         | 修复某个功能模块的bug                |
+| 紧急修复  | hotfix/fix_name  | hotfix/create_order | 紧急修复某个严重bug                 |
+| 性能优化  | perf/name        | pref/user_login     | 优化某个功能的性能                   |
+| 格式调整  | style/name       | style/log_print     | 做一下不影响任何业务的优化，比如删掉不使用了的注释之类 |
+| 重构    | refactor/name    | refactor/user       | 重构某个功能模块                    |   
+| 测试    | test/name        | test/user           | 测试相关, 不涉及业务代码的更改            |   
+| 文档和注释 | docs/name        | docs/user           | 文档和注释相关                     |   
+| 更新依赖等 | chore/name       | chore/user          | 更新依赖/修改脚手架配置等琐事             |   
+
 

@@ -14,6 +14,7 @@
     <modules>
         <module>cloud-service</module>
         <module>cloud-cache</module>
+        <module>cloud-system</module>
     </modules>
     <artifactId>cloud-module</artifactId>
 

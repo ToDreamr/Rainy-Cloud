@@ -1,6 +1,6 @@
 package com.pray.filter;
 
-import com.pray.exception.CloudServiceException;
+import com.pray.exception.CloudException;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
@@ -36,7 +36,7 @@ public class SqlFilter {
             //判断是否包含非法字符
             for(String keyword : keywords){
                 if(str.indexOf(keyword) != -1){
-                    throw new CloudServiceException("SQL非法");
+                    throw new CloudException("SQL非法");
                 }
             }
             return str;

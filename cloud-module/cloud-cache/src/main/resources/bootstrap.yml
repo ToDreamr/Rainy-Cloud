@@ -1,5 +1,16 @@
 spring:
-    cloud:
+  data:
+    redis:
+      port: 6379
+  application:
+    name: cloud-cache   #项目缓存微服务
+  datasource:
+    url: jdbc:mysql://localhost:3306/backend-base
+    password: 123456
+    username: root
+  profiles:
+    active: dev
+  cloud:
       # 配置流量卫兵
       sentinel:
         transport:
@@ -19,17 +30,11 @@ spring:
           namespace: public
           username: nacos
           password: nacos
-          # 配置文件后缀名
+          # 配置文件格式
           file-extension: yml
-    data:
-      redis:
-        port: 6379
-    application:
-      name: cloud-cache   #项目缓存微服务
-    datasource:
-      url: jdbc:mysql://localhost:3306/backend-base
-      password: 123456
-      username: root
+          # 共享配置
+          shared-configs:
+            - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
 feign:
   sentinel:
     enabled: true

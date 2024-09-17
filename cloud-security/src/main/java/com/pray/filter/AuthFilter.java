@@ -30,7 +30,7 @@ public class AuthFilter implements Filter {
     @Resource
     private HttpHandler httpHandler;
     @Resource
-    TokenFeignClient tokenFeignClient;
+    private TokenFeignClient tokenFeignClient;
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         Filter.super.init(filterConfig);

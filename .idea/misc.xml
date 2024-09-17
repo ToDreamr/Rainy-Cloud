@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-generator/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-module/cloud-system/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,7 +6,7 @@ import com.pray.constants.RabbitMqConstants;
 import com.pray.entity.po.Book;
 import com.pray.entity.po.BookUser;
 import com.pray.entity.po.Borrow;
-import com.pray.exception.CloudServiceException;
+import com.pray.exception.CloudException;
 import com.pray.feign.ServiceClient;
 import com.pray.mapper.BookMapper;
 import com.pray.mapper.BookUserMapper;
@@ -83,7 +83,7 @@ public class BookUserServiceImpl extends ServiceImpl<BookUserMapper, BookUser> i
                 return 1;
             }else {
                 log.error("<-----------------------"+this.getClass().getName()+"尝试进行借阅失败，借阅bookId:{},借阅人Id：{} ----------------------->",bookId,userId);
-                throw new CloudServiceException("尝试进行借阅失败");
+                throw new CloudException("尝试进行借阅失败");
             }
         }
     }
