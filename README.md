@@ -1,5 +1,5 @@
 
-# Rainy-Cloud  一套基于SpringCloud的的微服务智能项目管理系统。
+# Rainy-Cloud  一套基于云原生理念，支持高可用，高性能的简单易用云服务框架。
 <hr/>
 
 > 简介：Rainy-Cloud包括认证、流程、项目管理、用户、网关等服务。包含了 Redis 缓存、RabbitMQ 消息队列、Spring Security 安全框架、Nacos 服务注册和发现、Sentinel 熔断限流、Seata 分布式事务、OpenFeign 服务调用，融合了现在大部分微服务/分布式项目的技术栈。
