@@ -21,7 +21,7 @@
             as mid on mid.book_id=tb_book.book_id
     </select>
     <insert id="insertBorrowRecord">
-        insert into tb_borrow(id,book_id) VALUE (#{userId},#{bookId})
+        insert into tb_borrow(user_id,book_id) VALUE (#{userId},#{bookId})
     </insert>
     <select id="selectBorrowDetails" resultType="Map">
         select bu.username,bn.book_name from tb_book_user as bu right join (select book_name

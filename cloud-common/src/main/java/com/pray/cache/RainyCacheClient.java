@@ -2,7 +2,7 @@ package com.pray.cache;
 
 import cn.hutool.core.util.BooleanUtil;
 import com.pray.constants.RainyConstants;
-import com.pray.redis.RedisData;
+import com.pray.entity.dto.RedisDTO;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -41,11 +41,11 @@ public class RainyCacheClient {
      * @param unit
      */
     public void setWithExpire(String key, Object value, Long time, TimeUnit unit){
-        RedisData redisData = new RedisData();
-        redisData.setData(value);
+        RedisDTO RedisDTO = new RedisDTO();
+        RedisDTO.setData(value);
         //转换传入时间为秒，设置过期时间
-        redisData.setExpireTime(LocalDateTime.now().plusSeconds(unit.toSeconds(time)));
-        redisTemplate.opsForValue().set(key,redisData);
+        RedisDTO.setExpireTime(LocalDateTime.now().plusSeconds(unit.toSeconds(time)));
+        redisTemplate.opsForValue().set(key,RedisDTO);
     }
 
     /**
@@ -83,9 +83,9 @@ public class RainyCacheClient {
         if (o==null){
             return null;
         }
-        RedisData redisData=(RedisData) o;
-        Object cacheValue=redisData.getData();
-        LocalDateTime expireTime = redisData.getExpireTime();
+        RedisDTO RedisDTO=(RedisDTO) o;
+        Object cacheValue=RedisDTO.getData();
+        LocalDateTime expireTime = RedisDTO.getExpireTime();
 
         if (expireTime.isAfter(LocalDateTime.now())){
             //缓存未过期，直接返回数据

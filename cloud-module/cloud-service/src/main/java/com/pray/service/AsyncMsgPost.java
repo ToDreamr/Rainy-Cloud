@@ -14,8 +14,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class AsyncMsgPost {
     @Async()
-    public void postMsgByAsync(String msg)
-    {
+    public void postMsgByAsync(String msg) {
         log.info("通过异步注解Async实际完成发送消息:{}",msg);
     }
 }

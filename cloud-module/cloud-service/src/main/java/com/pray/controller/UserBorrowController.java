@@ -1,5 +1,6 @@
 package com.pray.controller;
 
+import com.pray.entity.dto.BorrowDTO;
 import com.pray.feign.ServiceClient;
 import com.pray.service.BookService;
 import com.pray.service.BookUserService;
@@ -34,10 +35,10 @@ public class UserBorrowController {
         return bookService.borrowList();
     }
 
-    @PostMapping("/{userId}/{bookId}")
-    public Result<Map<String, Object>> borrowBook(@PathVariable("userId") int userId,@PathVariable("bookId") int bookId){
-        int isBorrowed = bookUserService.borrowBook(userId, bookId);
-        List<Map<String, Object>> mapList = serviceClient.selectBorrowDetails(userId, bookId);
+    @PostMapping("/uniqueBookBorrow")
+    public Result<Map<String, Object>> borrowBook(@RequestBody BorrowDTO borrowDTO) {
+        int isBorrowed = bookUserService.borrowBook(borrowDTO.getUserId(), borrowDTO.getBookId());
+        List<Map<String, Object>> mapList = serviceClient.selectBorrowDetails(borrowDTO.getUserId(), borrowDTO.getBookId());
         if (isBorrowed==1) {
             return Result.ok(mapList.get(0),"借阅成功");
         } else if (isBorrowed==2) {
