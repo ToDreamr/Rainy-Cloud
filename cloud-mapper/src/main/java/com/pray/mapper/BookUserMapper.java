@@ -20,7 +20,7 @@ public interface BookUserMapper extends BaseMapper<BookUser> {
      * @param userId 用户工号
      * @return int
      */
-    @Select("select bootdemo.book_user.borrow_count from bootdemo.book_user where user_id=#{userId}")
+    @Select("select spring_runner.tb_book_user.borrow_count from spring_runner.tb_book_user where user_id=#{userId}")
     int getRemainCount(int userId);
 
     /**
@@ -29,7 +29,7 @@ public interface BookUserMapper extends BaseMapper<BookUser> {
      * @param userId 用户工号
      * @return int
      */
-    @Update("update bootdemo.book_user set book_user.borrow_count=#{borrowCount} where user_id=#{userId}")
+    @Update("update spring_runner.tb_book_user set tb_book_user.borrow_count=#{borrowCount} where user_id=#{userId}")
     int updateBorrowCount(@Param("borrowCount")int borrowCount,@Param("userId")int userId);
 }
 

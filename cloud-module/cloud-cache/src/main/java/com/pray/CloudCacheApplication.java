@@ -15,9 +15,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 //@EnableAutoDataSourceProxy
 @MapperScan(basePackages = "com.pray.mapper")
-@SpringBootApplication
 @EnableFeignClients(basePackages = "com.pray.feign")//自动装配的开关，实现了Aware接口,同时根据包路径注入Feign调用服务
 @EnableDiscoveryClient
+@SpringBootApplication
 public class CloudCacheApplication {
     //拆分查询缓存的微服务
     public static void main(String[] args) {

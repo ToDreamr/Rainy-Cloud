@@ -25,7 +25,7 @@ public interface BookMapper extends BaseMapper<Book> {
      * @param bookId 书籍Id
      * @return int
      */
-    @Update("update bootdemo.book set book.book_count=#{restCount} where book.book_id=#{bookId}")
+    @Update("update spring_runner.tb_book set tb_book.book_count=#{restCount} where tb_book.book_id=#{bookId}")
     int updateBookCountByBookId(@Param("restCount") int restCount,@Param("bookId") int bookId);
 
     /**
@@ -33,8 +33,8 @@ public interface BookMapper extends BaseMapper<Book> {
      * @param bookId 书籍Id
      * @return int
      */
-    @Select("select bootdemo.book.book_count from bootdemo.book where book_id=#{bookId}")
+    @Select("select spring_runner.tb_book.book_count from spring_runner.tb_book where book_id=#{bookId}")
     int selectBookRestCount(int bookId);
-    @Select("select * from bootdemo.book")
+    @Select("select * from spring_runner.tb_book")
     List<Book> bookList();
 }

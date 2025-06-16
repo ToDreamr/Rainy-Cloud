@@ -5,8 +5,8 @@ spring:
   application:
     name: cloud-cache   #项目缓存微服务
   datasource:
-    url: jdbc:mysql://localhost:3306/backend-base
-    password: 123456
+    url: jdbc:mysql://localhost:3306/spring_runner
+    password: root
     username: root
   profiles:
     active: dev
@@ -31,10 +31,12 @@ spring:
           username: nacos
           password: nacos
           # 配置文件格式
-          file-extension: yml
+          file-extension: yaml
           # 共享配置
           shared-configs:
-            - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+             - data-id: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+               refresh: true
+             - data-id: cloud-service.yaml
 feign:
   sentinel:
     enabled: true

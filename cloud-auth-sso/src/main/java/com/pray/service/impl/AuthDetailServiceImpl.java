@@ -8,7 +8,6 @@ import com.pray.mapper.AuthUserMapper;
 import com.pray.model.AuthAccount;
 import com.pray.service.AuthDetailService;
 import com.pray.util.JwtUtil;
-import com.pray.utils.ip.IpUtils;
 import jakarta.annotation.Resource;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -54,10 +53,8 @@ public class AuthDetailServiceImpl implements AuthDetailService {
         //用户ID
         authUser.setUserId((long) authAccount.getId());
         //用户IP
-        authUser.setIpaddr(IpUtils.getIpAddr());
         authUser.setOs("Windows/11.0");
         authUser.setExpireTime(3000L);
-        authUser.setLoginLocation(IpUtils.getHostName());
         authUser.setUser(new SysUser());
         //根据用户信息创建token
         String token = jwtUtil.createToken(authAccount.getUsername(),authAccount.getId());

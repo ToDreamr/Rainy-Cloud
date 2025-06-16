@@ -17,6 +17,6 @@
         email,enabled
     </sql>
     <select id="getAuthInfoByUserName" resultType="com.pray.model.AuthAccount">
-        select * from bootdemo.user where username =#{username};
+        select * from spring_runner.tb_user where username =#{username};
     </select>
 </mapper>

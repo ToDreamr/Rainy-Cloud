@@ -31,7 +31,7 @@ public interface BorrowMapper extends BaseMapper<Borrow> {
       * @param bookId  借阅书籍号
       * @return int
       */
-//     @Insert(" insert into bootdemo.borrow(user_id,book_id) VALUE (#{userId},#{bookId})")
+//     @Insert(" insert into spring_runner.borrow(user_id,book_id) VALUE (#{userId},#{bookId})")
      int insertBorrowRecord(@Param("userId") int userId, @Param("bookId") int bookId);
 
      /**

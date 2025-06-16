@@ -6,9 +6,9 @@ spring:
   application:
     name: cloud-service
   datasource:
-    url: jdbc:mysql://localhost:3306/backend-base
+    url: jdbc:mysql://localhost:3306/spring_runner
     username: root
-    password: 123456
+    password: root
   cloud:
     nacos:
       discovery:
@@ -61,6 +61,7 @@ logging:
 feign:
   sentinel:
     enabled: true
+
 #seata:
 #  # 注册
 #  registry:

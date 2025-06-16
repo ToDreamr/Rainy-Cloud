@@ -15,7 +15,7 @@ import java.util.Set;
  *
  * @author 春江花朝秋月夜
  */
-@Service("ss")
+@Service("permissionService")
 public class PermissionService {
     /**
      * 所有权限标识

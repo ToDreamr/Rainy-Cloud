@@ -25,7 +25,7 @@ public class TokenFeignController implements TokenFeignClient {
     @Override
     public AuthUser checkToken(String accessToken) {
         log.info("<--------------------解析Token-------------------------->");
-        log.info(this.getClass().getName()+"获取到accessToken：{}",accessToken);
+        log.info("{}获取到accessToken：{}", this.getClass().getName(), accessToken);
         try {
             AuthUser tokenSelectRes = tokenFactory.getAuthUser(accessToken);
             if (tokenSelectRes == null) {
@@ -33,7 +33,7 @@ public class TokenFeignController implements TokenFeignClient {
             }
             return tokenSelectRes;
         }catch (Exception e){
-            e.printStackTrace();
+            log.error(e.getMessage());
         }
         return null;
     }

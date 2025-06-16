@@ -7,12 +7,8 @@ import com.pray.constants.Constants;
 import com.pray.constants.SecurityConstants;
 import com.pray.entity.auth.AuthUser;
 import com.pray.utils.JwtUtils;
-import com.pray.utils.ServletUtils;
 import com.pray.utils.StringUtils;
-import com.pray.utils.ip.AddressUtils;
-import com.pray.utils.ip.IpUtils;
 import com.pray.utils.uuid.IdUtils;
-import eu.bitwalker.useragentutils.UserAgent;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -39,6 +35,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Component
 public class TokenService {
+
     private static final Logger log = LoggerFactory.getLogger(TokenService.class);
     protected static final long MILLIS_SECOND = 1000;
     protected static final long MILLIS_MINUTE = 60 * MILLIS_SECOND;
@@ -55,6 +52,7 @@ public class TokenService {
     // 令牌有效期（默认30分钟）
     @Value("${token.expireTime}")
     private int expireTime;
+
     @Autowired
     private RedisService redisService;
 
@@ -114,7 +112,7 @@ public class TokenService {
         {
             log.error("获取用户信息异常'{}'", e.getMessage());
         }
-        return user;
+        return null;
     }
 
 
@@ -148,7 +146,6 @@ public class TokenService {
         loginUser.setToken(token);
         loginUser.setUserId(userId);
         loginUser.setUsername(userName);
-        loginUser.setIpaddr(IpUtils.getIpAddr());
         refreshToken(loginUser);
 
         // Jwt存储信息
@@ -171,8 +168,6 @@ public class TokenService {
     public String createLongTimeToken(AuthUser loginUser) {
         String token = IdUtils.fastUUID();
         loginUser.setToken(token);
-
-        setUserAgent(loginUser);
         refreshLongToken(loginUser);
 
         Map<String, Object> claims = new HashMap<>();
@@ -235,21 +230,6 @@ public class TokenService {
                 refreshToken(loginUser);
             }
         });
-    }
-
-
-    /**
-     * 设置用户代理信息
-     *
-     * @param loginUser 登录信息
-     */
-    public void setUserAgent(AuthUser loginUser) {
-        UserAgent userAgent = UserAgent.parseUserAgentString(ServletUtils.getRequest().getHeader("User-Agent"));
-        String ip = IpUtils.getIpAddr(ServletUtils.getRequest());
-        loginUser.setIpaddr(ip);
-        loginUser.setLoginLocation(AddressUtils.getRealAddressByIP(ip));
-        loginUser.setBrowser(userAgent.getBrowser().getName());
-        loginUser.setOs(userAgent.getOperatingSystem().getName());
     }
 
     /**
