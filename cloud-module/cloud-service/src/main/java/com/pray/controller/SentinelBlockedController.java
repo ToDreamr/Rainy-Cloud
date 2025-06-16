@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "/block")
 public class SentinelBlockedController {
+    /**
+     * 当接口被限流或者熔断时，会返回该方法
+     *
+     * @return Result<String>
+     *
+     */
     @GetMapping
     public Result<String> blocked(){
         JsonObject jsonObject=new JsonObject();

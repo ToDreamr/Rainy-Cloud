@@ -1,4 +1,4 @@
-package com.pray.entity.vo.response;
+package com.pray.entity.vo;
 
 import lombok.Data;
 

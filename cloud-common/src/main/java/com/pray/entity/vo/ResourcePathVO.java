@@ -1,4 +1,4 @@
-package com.pray.entity.vo.response;
+package com.pray.entity.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;

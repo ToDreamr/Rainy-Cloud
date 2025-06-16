@@ -1,7 +1,7 @@
 package com.pray.mapper;
 
-import com.pray.entity.blog.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.pray.entity.po.User;
 
 /**
  * <p>

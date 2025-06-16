@@ -141,8 +141,8 @@ public class TokenService {
     public String createToken(AuthUser loginUser)
     {
         String token = IdUtils.fastUUID();
-        Long userId = loginUser.getUser().getUserId();
-        String userName = loginUser.getUser().getUserName();
+        Long userId = loginUser.getUserId();
+        String userName = loginUser.getUsername();
         loginUser.setToken(token);
         loginUser.setUserId(userId);
         loginUser.setUsername(userName);

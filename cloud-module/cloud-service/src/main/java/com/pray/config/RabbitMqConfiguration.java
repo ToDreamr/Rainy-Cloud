@@ -17,7 +17,7 @@ import org.springframework.core.annotation.Order;
  * @since 2024/3/30 15:32
  */
 @Configuration
-public class RabbitConfig {
+public class RabbitMqConfiguration {
     //工作队列模式：
     @Resource
     private CachingConnectionFactory connectionFactory;

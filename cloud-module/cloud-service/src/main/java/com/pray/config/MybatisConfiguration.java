@@ -6,6 +6,7 @@ import org.apache.ibatis.logging.Log;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.BufferingClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -17,7 +18,12 @@ import org.springframework.web.client.RestTemplate;
  * @since 2023/8/25 12:36
  */
 @Configuration
-public class MybatisConfig {
+public class MybatisConfiguration {
+
+    /**
+     * 分页插件
+     * @return
+     */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
@@ -34,6 +40,8 @@ public class MybatisConfig {
     @Bean
     @LoadBalanced  //标记拦截要被Ribbon拦截,通过拦截器Interceptor来实现拦截
     RestTemplate restTemplate(){
-        return new RestTemplate();
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.setRequestFactory(new BufferingClientHttpRequestFactory((uri, httpMethod) -> restTemplate.getRequestFactory().createRequest(uri, httpMethod)));
+        return restTemplate;
     }
 }

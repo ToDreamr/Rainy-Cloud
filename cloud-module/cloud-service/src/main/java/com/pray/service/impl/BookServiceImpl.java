@@ -2,8 +2,8 @@ package com.pray.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pray.entity.po.Book;
-import com.pray.entity.vo.response.BorrowedListVO;
-import com.pray.entity.vo.response.UserListVO;
+import com.pray.entity.vo.BorrowedListVO;
+import com.pray.entity.vo.UserListVO;
 import com.pray.feign.ServiceClient;
 import com.pray.mapper.BookMapper;
 import com.pray.service.BookService;

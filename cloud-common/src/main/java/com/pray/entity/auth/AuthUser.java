@@ -1,6 +1,6 @@
 package com.pray.entity.auth;
 
-import com.pray.entity.sys.SysUser;
+import com.pray.entity.po.User;
 import lombok.Data;
 
 import java.io.Serial;
@@ -19,6 +19,7 @@ public class AuthUser implements Serializable {
      * 用户在自己系统的用户id
      */
     private Long userId;
+
     private String accessToken;
 
     @Serial
@@ -83,7 +84,7 @@ public class AuthUser implements Serializable {
     /**
      * 用户信息
      */
-    private SysUser user;
+    private User user;
 
     /**
      * 角色列表
@@ -94,12 +95,12 @@ public class AuthUser implements Serializable {
     public AuthUser() {
     }
 
-    public AuthUser(SysUser user, Set<String> permissions) {
+    public AuthUser(User user, Set<String> permissions) {
         this.user = user;
         this.permissions = permissions;
     }
 
-    public AuthUser(Long userId, Long deptId, SysUser user, Set<String> permissions) {
+    public AuthUser(Long userId, Long deptId, User user, Set<String> permissions) {
         this.userId = userId;
         this.deptId = deptId;
         this.user = user;

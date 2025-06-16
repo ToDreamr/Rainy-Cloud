@@ -1,9 +1,9 @@
 package com.pray.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pray.entity.blog.User;
-import com.pray.entity.dto.RegisterDto;
 import com.pray.entity.Result;
+import com.pray.entity.dto.RegisterDTO;
+import com.pray.entity.po.User;
 
 /**
  * <p>
@@ -14,6 +14,7 @@ import com.pray.entity.Result;
  * @since 2024-06-01
  */
 public interface IUserService extends IService<User> {
-    Result<?> register(RegisterDto registerDto);
+
+    Result<?> register(RegisterDTO registerDto);
 
 }

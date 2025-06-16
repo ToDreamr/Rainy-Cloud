@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.Scheduled;
  * @author 春江花朝秋月夜
  * @since 2024/1/18 12:43
  */
-public class ScheduledConfig {
+public class ScheduledConfiguration {
     //数组 ，长度为n，target，连续子数组和大于等于target，返回最小长度
     public static int minSubArrayLen(int target, int[] nums) {
         int slowIndex = 0;

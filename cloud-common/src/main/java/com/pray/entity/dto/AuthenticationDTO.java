@@ -6,7 +6,7 @@ package com.pray.entity.dto;
  * @author 春江花朝秋月夜
  * @since 2024/4/13 1:36
  */
-public class AuthenticationDTO {
+public class AuthenticationDTO extends CommonDTO{
     /**
      * 用户名
      */

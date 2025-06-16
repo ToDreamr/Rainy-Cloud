@@ -2,7 +2,7 @@ package com.pray.service.impl;
 
 import com.pray.entity.auth.AuthInfoInTokenBO;
 import com.pray.entity.auth.AuthUser;
-import com.pray.entity.sys.SysUser;
+import com.pray.entity.po.User;
 import com.pray.exception.CloudException;
 import com.pray.mapper.AuthUserMapper;
 import com.pray.model.AuthAccount;
@@ -55,7 +55,7 @@ public class AuthDetailServiceImpl implements AuthDetailService {
         //用户IP
         authUser.setOs("Windows/11.0");
         authUser.setExpireTime(3000L);
-        authUser.setUser(new SysUser());
+        authUser.setUser(new User());
         //根据用户信息创建token
         String token = jwtUtil.createToken(authAccount.getUsername(),authAccount.getId());
         authUser.setAccessToken(token);

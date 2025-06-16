@@ -35,6 +35,7 @@ public interface BookMapper extends BaseMapper<Book> {
      */
     @Select("select spring_runner.tb_book.book_count from spring_runner.tb_book where book_id=#{bookId}")
     int selectBookRestCount(int bookId);
+
     @Select("select * from spring_runner.tb_book")
     List<Book> bookList();
 }

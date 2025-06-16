@@ -1,10 +1,10 @@
 package com.pray.controller;
 
 
-import com.pray.entity.dto.AuthenticationDTO;
-import com.pray.entity.dto.RegisterDto;
-import com.pray.service.IUserService;
 import com.pray.entity.Result;
+import com.pray.entity.dto.AuthenticationDTO;
+import com.pray.entity.dto.RegisterDTO;
+import com.pray.service.IUserService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,7 +31,7 @@ public class UserController {
     }
     //抽象出新的实体来接受用户传入的数据流
     @PostMapping("/ua/register")
-    public Result<?> register(@RequestBody RegisterDto registerDto){
+    public Result<?> register(@RequestBody RegisterDTO registerDto){
         return Result.ok(userService.register(registerDto));
     }
 }

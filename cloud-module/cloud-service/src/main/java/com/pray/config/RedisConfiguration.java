@@ -21,7 +21,7 @@ import java.util.List;
  * @since 2024/3/30 15:31
  */
 @Configuration
-public class RedisConfig {
+public class RedisConfiguration {
     @Bean
     public RedisTemplate<String, List<Account>> accountRedisTemplate(RedisConnectionFactory connectionFactory){
         RedisTemplate<String, List<Account>> template = new RedisTemplate<>();

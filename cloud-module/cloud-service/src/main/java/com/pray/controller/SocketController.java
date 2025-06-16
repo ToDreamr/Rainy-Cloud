@@ -27,7 +27,7 @@ public class SocketController {
      */
     @PostMapping("/write")
     @SocketServer
-    public Result writeServer(@RequestParam String param, HttpServletRequest servletRequest){
+    public Result<String> writeServer(@RequestParam String param, HttpServletRequest servletRequest){
         //创建一个新的SocketChannel，一会通过通道进行通信
         try (SocketChannel channel = SocketChannel.open(new InetSocketAddress("localhost", 8000))){
             System.out.println("已连接到服务端！");

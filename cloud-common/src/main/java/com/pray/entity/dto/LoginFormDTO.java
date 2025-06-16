@@ -11,7 +11,7 @@ import lombok.Data;
  * @since 2023/8/24
  */
 @Data
-public class LoginFormDto {
+public class LoginFormDTO extends CommonDTO{
     String username;
     String password;
 }

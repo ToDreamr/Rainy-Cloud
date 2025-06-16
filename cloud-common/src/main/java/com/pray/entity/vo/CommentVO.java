@@ -1,4 +1,4 @@
-package com.pray.entity.vo.response;
+package com.pray.entity.vo;
 
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

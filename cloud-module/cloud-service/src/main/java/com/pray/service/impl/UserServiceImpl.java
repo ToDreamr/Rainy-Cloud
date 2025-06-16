@@ -3,12 +3,12 @@ package com.pray.service.impl;
 import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pray.constants.RainyConstants;
-import com.pray.entity.blog.User;
-import com.pray.entity.dto.RegisterDto;
-import com.pray.entity.vo.response.AuthorizeVO;
+import com.pray.entity.Result;
+import com.pray.entity.dto.RegisterDTO;
+import com.pray.entity.po.User;
+import com.pray.entity.vo.AuthorizeVO;
 import com.pray.mapper.UserMapper;
 import com.pray.service.IUserService;
-import com.pray.entity.Result;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -24,10 +24,11 @@ import java.util.List;
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+
     @Resource
     private UserMapper userMapper;
     @Override
-    public Result<?> register(RegisterDto registerDto) {
+    public Result<?> register(RegisterDTO registerDto) {
         //用户是否存在
         List<User> list = query().eq("username", registerDto.getUsername())
                 .eq("email", registerDto.getEmail()).list();

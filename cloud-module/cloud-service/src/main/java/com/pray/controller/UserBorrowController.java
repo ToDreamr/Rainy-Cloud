@@ -19,6 +19,7 @@ import java.util.Map;
 @RestController
 @RequestMapping(path = "/borrow")
 public class UserBorrowController {
+
     @Resource
     private BookService bookService;
 
@@ -27,6 +28,7 @@ public class UserBorrowController {
 
     @Resource
     private ServiceClient serviceClient;
+
     @GetMapping
     public Result<?> borrowList() {
         return bookService.borrowList();

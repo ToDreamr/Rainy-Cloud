@@ -2,7 +2,7 @@ package com.pray.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.pray.entity.po.Book;
-import com.pray.entity.vo.response.BorrowedListVO;
+import com.pray.entity.vo.BorrowedListVO;
 import com.pray.entity.Result;
 
 import java.util.List;
