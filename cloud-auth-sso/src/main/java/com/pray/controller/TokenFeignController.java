@@ -19,8 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 public class TokenFeignController implements TokenFeignClient {
+
     @Resource
     private TokenFactory tokenFactory;
+
     @GetMapping(value = Auth.CHECK_TOKEN_URI)
     @Override
     public AuthUser checkToken(String accessToken) {

@@ -12,11 +12,11 @@ import com.pray.mapper.BookUserMapper;
 import com.pray.mapper.BorrowMapper;
 import com.pray.service.BookService;
 import com.pray.service.BookUserService;
+import io.seata.spring.annotation.GlobalTransactional;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -43,47 +43,51 @@ public class BookUserServiceImpl extends ServiceImpl<BookUserMapper, BookUser> i
     private RabbitTemplate rabbitTemplate;
 
     @Override
-    @Transactional(rollbackFor = {Exception.class})
+    @GlobalTransactional(rollbackFor = Exception.class)
     public int borrowBook(int userId, int bookId) {
+        // 1. 查询用户剩余可借阅数量
+        int userRemainCount = bookUserMapper.getRemainCount(userId);
 
-        // Demo只用来测试Seata事务只做一次借一本书的业务
-        int userRemainCount = bookUserMapper.getRemainCount(userId);//获取剩余可借阅数量
-        int bookRemainCount=bookService.selectBookRestCount(bookId);//获取书籍库存
+        // 2. 查询书籍库存
+        int bookRemainCount = bookService.selectBookRestCount(bookId);
 
-        if (userRemainCount<=0||bookRemainCount<=0) {
+        if (userRemainCount <= 0 || bookRemainCount <= 0) {
             return 0;
         }
 
-        // 初始失败
-        int bookBorrow;
-        int userBorrow;
-        int borrowExcelBorrow;
-
-        // 先看看是不是借过这本书了
+        // 3. 检查是否已经借过这本书
         List<Borrow> userBorrowList = borrowMapper.selectList(new QueryWrapper<Borrow>().eq("user_id", userId)
-                .eq("book_id",bookId));
-        // 目标借阅书籍
-        List<Book> targetBook= bookMapper.selectList(new QueryWrapper<Book>().eq("book_id",bookId));
-        if (!userBorrowList.isEmpty()){
+                .eq("book_id", bookId));
+        List<Book> targetBook = bookMapper.selectList(new QueryWrapper<Book>().eq("book_id", bookId));
+        if (!userBorrowList.isEmpty()) {
             return 2;
         } else {
-            // 下面的事务应该要么全部执行要么都不执行，注意！！！
-            // 尝试借阅书籍
-            bookBorrow=bookService.updateBookCountByBookId(bookRemainCount-1,bookId);
-            userBorrow=bookUserMapper.updateBorrowCount(userRemainCount-1,userId);// 更新可借阅数量
-
-            // 向MQ发送借阅消息，这里使用的是最简单的topic模式
-//            rabbitTemplate.convertAndSend("amq.direct", RabbitMqConstants.BOOK_BORROW_TOPIC,
-//                        "产生一条借阅记录，userId="+userId);
-            borrowExcelBorrow=serviceClient.insertBorrowRecord(userId,bookId);// 用Feign来实现调用，模拟微服务
-            log.info("<----------------------- 产生一条借阅记录,借阅用户Id:{},书籍Id:{} ----------------------->",userId,bookId);
-            //全部都要成功，否则事务失败
-            if ((bookBorrow&userBorrow&borrowExcelBorrow)==1){
-                return 1;
-            }else {
-                log.error("<-----------------------"+this.getClass().getName()+"尝试进行借阅失败，借阅bookId:{},借阅人Id：{} ----------------------->",bookId,userId);
-                throw new CloudException("尝试进行借阅失败");
+            // 4. 更新书籍库存（本地事务）
+            int bookBorrow = bookService.updateBookCountByBookId(bookRemainCount - 1, bookId);
+            if (bookBorrow != 1) {
+                log.error("<----------------------- 更新书籍 {} 库存失败 ----------------------->", bookId);
+                throw new CloudException("更新书籍库存失败");
             }
+
+            // 5. 更新用户可借阅数量（本地事务）
+            int userBorrow = bookUserMapper.updateBorrowCount(userRemainCount - 1, userId);
+            if (userBorrow != 1) {
+                log.error("<----------------------- 更新用户 {} 可借阅数量失败 ----------------------->", userId);
+                throw new CloudException("更新用户可借阅数量失败");
+            }
+
+            // 6. 调用远程服务插入借阅记录（属于另一个微服务的事务）
+            int borrowExcelBorrow = serviceClient.insertBorrowRecord(userId, bookId);
+            if (borrowExcelBorrow != 1) {
+                log.error("<----------------------- 远程调用插入借阅记录失败，借阅bookId:{},借阅人Id：{} ----------------------->", bookId, userId);
+                throw new CloudException("远程调用插入借阅记录失败");
+            }
+
+            // 7. 记录日志，表示借阅成功
+            log.info("<----------------------- 产生一条借阅记录,借阅用户Id:{},书籍Id:{} ----------------------->", userId, bookId);
+
+            // 8. 全部成功，返回结果
+            return 1;
         }
     }
 }

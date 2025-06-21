@@ -27,6 +27,7 @@
         select bu.username,bn.book_name from tb_book_user as bu right join (select book_name
                                                                          from tb_book where
                          book_id=(select distinct (book_id) from tb_borrow
-                   where tb_borrow.book_id=#{bookId}                                                                                                                                      and borrow.user_id=#{userId})) as bn on bu.user_id=#{userId}
+                   where tb_borrow.book_id=#{bookId}
+                     and tb_borrow.user_id=#{userId})) as bn on bu.user_id=#{userId}
     </select>
 </mapper>

@@ -6,6 +6,12 @@ spring:
   application:
     name: cloud-service
   datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
+        loginUsername: root
+        loginPassword: root
+      seata: true
     url: jdbc:mysql://localhost:3306/spring_runner
     username: root
     password: root
@@ -69,13 +75,53 @@ feign:
 #    type: nacos
 #    nacos:
 #      # 使用Seata的命名空间，这样才能正确找到Seata服务，由于组使用的是SEATA_GROUP，配置默认值就是，就不用配了
-#      namespace: 73193f73-ff4c-4287-9e8a-bd62f638d4dc
+#      namespace: b6237e20-d183-4d75-b038-66eeaaf1390d
 #      username: nacos
 #      password: nacos
+#      group: seata-group
 #  # 配置
 #  config:
 #    type: nacos
 #    nacos:
-#      namespace: 73193f73-ff4c-4287-9e8a-bd62f638d4dc
+#      namespace: b6237e20-d183-4d75-b038-66eeaaf1390d
 #      username: nacos
 #      password: nacos
+#      group: seata-group
+#
+## spring配置
+#spring:
+#  datasource:
+#    dynamic:
+#      # 开启seata代理
+#      seata: true
+#Seata分布式事务配置(AT模式)
+seata:
+  port: 7091
+  enabled: true
+  application-id: ${spring.application.name}
+  #客户端和服务端在同一个事务组
+#  tx-service-group: cloud-service
+  enable-auto-data-source-proxy: true
+#  service:
+#    vgroup-mapping:
+#      cloud-service: default
+  config:
+    type: nacos
+    nacos:
+      namespace: b6237e20-d183-4d75-b038-66eeaaf1390d
+      serverAddr: 127.0.0.1:8848
+      group: seata-group
+      username: nacos
+      password: nacos
+  #服务注册到nacos
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      group: seata-group
+      namespace: b6237e20-d183-4d75-b038-66eeaaf1390d
+      username: nacos
+      password: nacos
+      cluster: default
+
