@@ -4,3 +4,8 @@ mid-work/
 .idea/httpRequests
 .idea
 .vscode
+.idea/
+/.idea/dataSources/
+/.idea/httpRequests/
+/.idea/inspectionProfiles/
+/.idea/mybatisx/
