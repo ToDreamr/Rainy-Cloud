@@ -1,6 +1,6 @@
 package com.pray.manager;
 
-import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthUserTokenInfo;
 import com.pray.entity.auth.AuthUser;
 import com.pray.model.AuthAccount;
 import com.pray.util.JwtUtil;
@@ -38,20 +38,20 @@ public class TokenFactory {
      * @param authUser 用户在token中的信息
      * @return token信息
      */
-    public AuthInfoInTokenBO storeAccessToken(AuthUser authUser) {
+    public AuthUserTokenInfo storeAccessToken(AuthUser authUser) {
 
         String token = authUser.getAccessToken();
         System.out.println("accessToken:"+token);
 
         AuthAccount authAccount = jwtUtil.toUser(jwtUtil.resolveToken(token));
 
-        AuthInfoInTokenBO authInfoInTokenBO = new AuthInfoInTokenBO();
-        authInfoInTokenBO.setAuthUser(authUser);
+        AuthUserTokenInfo authUserTokenInfo = new AuthUserTokenInfo();
+        authUserTokenInfo.setAuthUser(authUser);
         //存储用户的token键值需要进一步考虑
 
         String userTokenKey=String.valueOf(authAccount.getId());
         redisTemplate.opsForValue().set(userTokenKey, authUser);
-        return authInfoInTokenBO;
+        return authUserTokenInfo;
     }
     public AuthUser getAuthUser(String accessToken) {
         if (accessToken == null) {

@@ -8,7 +8,7 @@ package com.pray.entity.auth;
  * @author FrozenWatermelon
  * @date 2020/7/3
  */
-public class AuthInfoInTokenBO {
+public class AuthUserTokenInfo {
 
 	/**
 	 * 用户在自己系统的用户id
@@ -46,7 +46,7 @@ public class AuthInfoInTokenBO {
 
 	@Override
 	public String toString() {
-		return "AuthInfoInTokenBO{" +
+		return "AuthUserTokenInfo{" +
 				"authUser=" + authUser +
 				", refreshToken='" + refreshToken + '\'' +
 				", expiresIn=" + expiresIn +

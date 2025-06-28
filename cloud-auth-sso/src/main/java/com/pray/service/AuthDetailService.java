@@ -1,6 +1,6 @@
 package com.pray.service;
 
-import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthUserTokenInfo;
 
 /**
  * AuthDetailService
@@ -9,5 +9,5 @@ import com.pray.entity.auth.AuthInfoInTokenBO;
  * @since 2024/4/13
  */
 public interface AuthDetailService {
-    AuthInfoInTokenBO getAuthInfoByUserNameAndPassword(String inputUserName,String password);
+    AuthUserTokenInfo getAuthInfoByUserNameAndPassword(String inputUserName, String password);
 }

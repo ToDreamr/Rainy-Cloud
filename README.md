@@ -81,7 +81,7 @@ GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务�
 部分认证逻辑
 
 ```java
-    public Result<AuthInfoInTokenBO> getAuthInfoByUserNameAndPassword(String inputUserName, String password) {
+    public Result<AuthInfoIntokenUserInfo> getAuthInfoByUserNameAndPassword(String inputUserName, String password) {
         //获取登录账户
         AuthAccount authAccount = authUserMapper.getAuthInfoByUserName(inputUserName);
         if (authAccount==null){
@@ -91,7 +91,7 @@ GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务�
           throw new CloudException("密码错误，异常的尝试");
         }
         //构建上下文保存登录对象
-        AuthInfoInTokenBO tokenBO = new AuthInfoInTokenBO();
+        AuthInfoIntokenUserInfo tokenUserInfo = new AuthInfoIntokenUserInfo();
         AuthUser authUser = new AuthUser();
 
         authUser.setUserId((long) authAccount.getId());
@@ -103,14 +103,14 @@ GateWay统一Api接入层，配合Nginx作负载均衡，本项目的RPC服务�
         String refreshToken = jwtUtil.createRefreshToken();
         try {
             // TODO 完成刷新token
-            tokenBO.setRefreshToken(refreshToken);
+            tokenUserInfo.setRefreshToken(refreshToken);
         } catch (Exception e) {
             throw new CloudException("颁发或刷新Token异常");
         }
-        tokenBO.setExpiresIn(3000);
+        tokenUserInfo.setExpiresIn(3000);
         //授权登录用户
-        tokenBO.setAuthUser(authUser);
-        return Result.ok(tokenBO);
+        tokenUserInfo.setAuthUser(authUser);
+        return Result.ok(tokenUserInfo);
     }
 ```
 

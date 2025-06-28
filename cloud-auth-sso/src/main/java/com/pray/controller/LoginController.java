@@ -1,6 +1,6 @@
 package com.pray.controller;
 
-import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthUserTokenInfo;
 import com.pray.entity.dto.AuthenticationDTO;
 import com.pray.manager.TokenFactory;
 import com.pray.service.AuthDetailService;
@@ -19,17 +19,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
     @Resource
-    TokenFactory tokenFactory;
+    private TokenFactory tokenFactory;
+
     @Resource
-    AuthDetailService authDetailService;
+    private AuthDetailService authDetailService;
+
     @PostMapping("/ua/login")
-    public Result<AuthInfoInTokenBO> login(
+    public Result<AuthUserTokenInfo> login(
              @RequestBody AuthenticationDTO authenticationDTO) {
         //尝试登录
-        AuthInfoInTokenBO info =
+        AuthUserTokenInfo info =
                 authDetailService.getAuthInfoByUserNameAndPassword(authenticationDTO.getCredentials(), authenticationDTO.getPrincipal());
 
-        AuthInfoInTokenBO authInfoInTokenBO = tokenFactory.storeAccessToken(info.getAuthUser());
-        return Result.success(authInfoInTokenBO);
+        AuthUserTokenInfo authUserTokenInfo = tokenFactory.storeAccessToken(info.getAuthUser());
+        return Result.success(authUserTokenInfo);
     }
 }

@@ -23,23 +23,22 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class JwtUtil {
 
-    public  String SECRET_KEY="Rainy-Heights";//密钥
+    public String SECRET_KEY = "Rainy-Heights";//密钥
 
-    private long expireTime=72*60*60;//过期时间
-    public DecodedJWT resolveToken(String token){
+    public DecodedJWT resolveToken(String token) {
         //undefined不是null
-        if (token==null){
+        if (token == null) {
             return null;
         }
-        Algorithm algorithm=Algorithm.HMAC256(SECRET_KEY);
-        JWTVerifier jwtVerifier= JWT.require(algorithm).build();
+        Algorithm algorithm = Algorithm.HMAC256(SECRET_KEY);
+        JWTVerifier jwtVerifier = JWT.require(algorithm).build();
 
         try {
             DecodedJWT verify = jwtVerifier.verify(token);
             Date expires = verify.getExpiresAt();
             //判断token是否过期同时返回
             return verify;
-        }catch (JWTDecodeException e){
+        } catch (JWTDecodeException e) {
             //抛出异常交给下一级处理
             throw new CloudException("token解析失败");
         }
@@ -47,22 +46,23 @@ public class JwtUtil {
 
     /**
      * 根据传入的登录信息生成token
+     *
      * @param username
      * @return
      */
-    public String createToken(String username,int id){
-        Algorithm algorithm=Algorithm.HMAC256(SECRET_KEY);
+    public String createToken(String username, int id) {
+        Algorithm algorithm = Algorithm.HMAC256(SECRET_KEY);
         //携带下面的信息
         return JWT.create()
-                .withClaim("id",id)
-                .withClaim("username",username)
+                .withClaim("id", id)
+                .withClaim("username", username)
                 .withExpiresAt(expireTime())
                 .withIssuedAt(new Date())
                 .sign(algorithm);//签名
     }
 
-    public String createRefreshToken(){
-        Algorithm algorithm=Algorithm.HMAC256(SECRET_KEY);
+    public String createRefreshToken() {
+        Algorithm algorithm = Algorithm.HMAC256(SECRET_KEY);
         //携带下面的信息
         return JWT.create()
                 .withExpiresAt(expireTime())
@@ -71,18 +71,21 @@ public class JwtUtil {
     }
 
     //设置过期时间
-    public Date expireTime(){
+    public Date expireTime() {
         long now = System.currentTimeMillis();
-        long future = now + TimeUnit.HOURS.toMillis(this.expireTime);
+        //过期时间
+        long expireTime = 72 * 60 * 60;
+        long future = now + TimeUnit.HOURS.toMillis(expireTime);
         return new Date(future);
     }
 
     /**
      * 解析颁发的jwt
+     *
      * @param jwt 已经解析的jwt对象
      * @return User
      */
-    public AuthAccount toUser(DecodedJWT jwt){
+    public AuthAccount toUser(DecodedJWT jwt) {
         Map<String, Claim> claims = jwt.getClaims();
         AuthAccount user = new AuthAccount();
         user.setId(claims.get("id").asInt());

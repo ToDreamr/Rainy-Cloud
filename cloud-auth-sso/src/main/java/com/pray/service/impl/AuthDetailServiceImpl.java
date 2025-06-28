@@ -1,6 +1,6 @@
 package com.pray.service.impl;
 
-import com.pray.entity.auth.AuthInfoInTokenBO;
+import com.pray.entity.auth.AuthUserTokenInfo;
 import com.pray.entity.auth.AuthUser;
 import com.pray.entity.po.User;
 import com.pray.exception.CloudException;
@@ -32,10 +32,10 @@ public class AuthDetailServiceImpl implements AuthDetailService {
      * 用户登录逻辑
      * @param inputUserName 用户名
      * @param password 密码
-     * @return AuthInfoInTokenBO保存在token信息里面的信息，包含已认证用户AuthUser，刷新token，token过期时间
+     * @return AuthUserTokenInfo保存在token信息里面的信息，包含已认证用户AuthUser，刷新token，token过期时间
      */
     @Override
-    public AuthInfoInTokenBO getAuthInfoByUserNameAndPassword(String inputUserName, String password) {
+    public AuthUserTokenInfo getAuthInfoByUserNameAndPassword(String inputUserName, String password) {
         //获取登录账户
         AuthAccount authAccount = authUserMapper.getAuthInfoByUserName(inputUserName);
         if (authAccount==null){
@@ -45,7 +45,7 @@ public class AuthDetailServiceImpl implements AuthDetailService {
           throw new CloudException("密码错误，异常的尝试");
         }
         //构建上下文保存登录对象
-        AuthInfoInTokenBO tokenBO = new AuthInfoInTokenBO();
+        AuthUserTokenInfo tokenUserInfo = new AuthUserTokenInfo();
 
         //已认证用户
         AuthUser authUser = new AuthUser();
@@ -63,13 +63,13 @@ public class AuthDetailServiceImpl implements AuthDetailService {
         String refreshToken = jwtUtil.createRefreshToken();
         try {
             // TODO 完成刷新token
-            tokenBO.setRefreshToken(refreshToken);
+            tokenUserInfo.setRefreshToken(refreshToken);
         } catch (Exception e) {
             throw new CloudException("颁发或刷新Token异常");
         }
-        tokenBO.setExpiresIn(3000);
+        tokenUserInfo.setExpiresIn(3000);
         //授权登录用户
-        tokenBO.setAuthUser(authUser);
-        return tokenBO;
+        tokenUserInfo.setAuthUser(authUser);
+        return tokenUserInfo;
     }
 }
