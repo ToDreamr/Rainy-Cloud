@@ -31,13 +31,13 @@ public class BorrowController {
     @PostMapping("/insertBorrow/{userId}/{bookId}")
     public int insertBorrowRecord(@PathVariable("userId") int userId,@PathVariable("bookId") int bookId)
     {
-        log.info("<----------------------- 接收到借书服务调用,借阅用户Id:{},书籍Id:{} ----------------------->",userId,bookId);
+        log.info("<----------------------- 接收到借书服务插入记录调用,借阅用户Id:{},书籍Id:{} ----------------------->",userId,bookId);
         return borrowService.insertBorrowRecord(userId,bookId);
     }
 
     @GetMapping("/borrowDetails/{userId}/{bookId}")
     public List<Map<String, Object>> selectBorrowDetails(@PathVariable("userId") int userId,@PathVariable("bookId") int bookId){
-        log.info("<----------------------- 接收到借书服务详情调用,借阅用户Id:{},书籍Id:{} ----------------------->",userId,bookId);
+        log.info("<----------------------- 接收到借书服务详情查询调用,借阅用户Id:{},书籍Id:{} ----------------------->",userId,bookId);
         return borrowService.selectBorrowDetails(userId, bookId);
     }
     @GetMapping("/booklist")

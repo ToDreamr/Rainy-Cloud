@@ -31,7 +31,8 @@ public class BorrowServiceImpl extends ServiceImpl<BorrowMapper, Borrow>
 
     @Override
     public int insertBorrowRecord(int userId, int bookId) {
-        return borrowMapper.insertBorrowRecord(userId,bookId);
+        throw new RuntimeException("服务调用失败");
+//        return borrowMapper.insertBorrowRecord(userId,bookId);
     }
 
     @Override
